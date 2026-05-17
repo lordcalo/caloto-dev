@@ -91,6 +91,11 @@ a:hover {
     linear-gradient(135deg, #fff8ed 0%, #fff1d6 44%, #e9f7ff 100%);
 }
 
+.app-hero--home {
+  grid-template-columns: 1fr;
+  min-height: 72vh;
+}
+
 .app-hero__copy {
   max-width: 720px;
 }
@@ -266,6 +271,10 @@ p {
   gap: 18px;
 }
 
+.feature-grid--single {
+  grid-template-columns: minmax(0, 420px);
+}
+
 .feature-card {
   min-height: 210px;
   padding: 24px;
@@ -282,6 +291,13 @@ p {
 .feature-card p {
   margin: 0;
   color: var(--muted);
+}
+
+.card-link {
+  display: inline-flex;
+  margin-top: 18px;
+  color: var(--secondary);
+  font-weight: 850;
 }
 
 .legal-page {

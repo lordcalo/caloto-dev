@@ -1,9 +1,10 @@
-# PartyKit Web
+# Caloto.dev
 
-Web estatica para publicar PartyKit gratis en Cloudflare Pages.
+Web estatica para publicar `caloto.dev` gratis en Cloudflare Pages.
 
 ## Rutas
 
+- `/`
 - `/partykit/`
 - `/partykit/privacy/`
 
@@ -26,4 +27,4 @@ python3 -m http.server 8080
    - Build output directory: `/`
 5. Despliega y usa el dominio `*.pages.dev` gratuito.
 
-La raiz `/` redirige a `/partykit/`.
+Despues puedes conectar el dominio propio `caloto.dev` desde Cloudflare.
