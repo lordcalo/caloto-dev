@@ -5,63 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Caloto.dev apps, support pages and privacy policies."
+      content="Alfredo Caloto, software developer building backend systems, integrations and independent mobile apps."
     />
-    <title>Caloto.dev</title>
+    <title>Alfredo Caloto | Software Developer</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="/" aria-label="Caloto.dev home">
-        <span class="brand-mark">C</span>
-        <span>Caloto.dev</span>
+  <body class="theme-dark">
+    <header class="site-header site-header--dark">
+      <a class="brand brand--logo" href="/" aria-label="Caloto.dev home">
+        <img src="/assets/brand/acaloto.png" alt="A. Caloto" />
       </a>
-      <nav class="nav" aria-label="Primary navigation">
+      <nav class="nav nav--dark" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#apps">Apps</a>
         <a href="/partykit/">PartyKit</a>
-        <a href="mailto:support@caloto.dev">Support</a>
+        <a href="mailto:support@caloto.dev">Contact</a>
       </nav>
     </header>
 
     <main>
-      <section class="app-hero app-hero--home">
-        <div class="app-hero__copy">
-          <p class="eyebrow">Independent apps</p>
-          <h1>Caloto.dev</h1>
-          <p>
-            Home for apps, support pages and privacy policies published by
-            Caloto.dev.
+      <section class="dev-hero">
+        <div class="dev-hero__content">
+          <p class="eyebrow eyebrow--red">Software developer</p>
+          <h1>Alfredo Caloto</h1>
+          <p class="lead">
+            I build production software, integrations and mobile products with a
+            practical focus on architecture, reliability and shipping.
           </p>
           <div class="actions">
-            <a class="button button--primary" href="/partykit/">Open PartyKit</a>
-            <a class="button button--secondary" href="mailto:support@caloto.dev">
-              Contact support
+            <a class="button button--red" href="mailto:support@caloto.dev">
+              Get in touch
+            </a>
+            <a class="button button--ghost" href="/assets/brand/alfredo-caloto-cv.pdf">
+              Download CV
+            </a>
+            <a
+              class="button button--ghost"
+              href="https://www.linkedin.com/in/alfredocaloto/"
+            >
+              LinkedIn
             </a>
           </div>
         </div>
+        <div class="signature-panel" aria-hidden="true">
+          <img src="/assets/brand/acaloto.png" alt="" />
+        </div>
       </section>
 
-      <section class="content-section">
-        <div class="section-title">
-          <p class="eyebrow">Apps</p>
-          <h2>Current projects.</h2>
+      <section class="split-section" id="work">
+        <div>
+          <p class="eyebrow eyebrow--red">Profile</p>
+          <h2>Developer based in Asturias, working on business systems and indie apps.</h2>
         </div>
-        <div class="feature-grid feature-grid--single">
-          <article class="feature-card">
-            <h3>PartyKit</h3>
+        <div class="copy-stack">
+          <p>
+            Currently connected with SEIDOR and a background from Universidad de
+            Oviedo. My work sits around backend development, integrations,
+            frontend delivery and product-minded engineering.
+          </p>
+          <p>
+            I like systems with clear contracts, small moving parts and enough
+            polish that real users can trust them.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section content-section--dark">
+        <div class="section-title">
+          <p class="eyebrow eyebrow--red">Focus</p>
+          <h2>What I work on.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card feature-card--dark">
+            <h3>Backend & integrations</h3>
             <p>
-              A party games app designed for groups playing together in the same
-              room.
+              APIs, data flows, payment-related work, automation and operational
+              tooling.
             </p>
-            <a class="card-link" href="/partykit/">View app page</a>
+          </article>
+          <article class="feature-card feature-card--dark">
+            <h3>Web & mobile products</h3>
+            <p>
+              Practical interfaces for real workflows, from web surfaces to
+              React Native apps.
+            </p>
+          </article>
+          <article class="feature-card feature-card--dark">
+            <h3>Architecture & delivery</h3>
+            <p>
+              Clear boundaries, maintainable code, fast iteration and production
+              discipline.
+            </p>
           </article>
         </div>
       </section>
+
+      <section class="apps-showcase" id="apps">
+        <div class="section-title">
+          <p class="eyebrow eyebrow--purple">Apps</p>
+          <h2>Independent products.</h2>
+        </div>
+        <article class="app-card">
+          <div>
+            <p class="eyebrow eyebrow--purple">PartyKit</p>
+            <h3>Party games for groups playing in the same room.</h3>
+            <p>
+              Offline-first, English and Spanish, built around quick rounds and
+              simple setup for friends at a party.
+            </p>
+            <div class="actions">
+              <a class="button button--purple" href="/partykit/">View PartyKit</a>
+              <a class="button button--ghost-dark" href="/partykit/privacy/">
+                Privacy Policy
+              </a>
+            </div>
+          </div>
+          <div class="screenshot-strip" aria-label="PartyKit screenshots">
+            <img src="/assets/partykit/overview.png" alt="PartyKit games screen" />
+            <img src="/assets/partykit/impostor.png" alt="PartyKit secret role screen" />
+            <img src="/assets/partykit/draw.png" alt="PartyKit draw and guess screen" />
+          </div>
+        </article>
+      </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer--dark">
       <span>Caloto.dev</span>
-      <a href="/partykit/privacy/">PartyKit Privacy Policy</a>
       <a href="mailto:support@caloto.dev">support@caloto.dev</a>
+      <a href="https://www.linkedin.com/in/alfredocaloto/">LinkedIn</a>
+      <a href="/partykit/privacy/">PartyKit Privacy Policy</a>
     </footer>
   </body>
 </html>

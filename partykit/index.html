@@ -7,16 +7,15 @@
       name="description"
       content="PartyKit is a party games app designed for groups playing together in the same room."
     />
-    <title>PartyKit</title>
+    <title>PartyKit | Caloto.dev</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="/" aria-label="Caloto.dev home">
-        <span class="brand-mark">C</span>
+  <body class="theme-party">
+    <header class="site-header site-header--party">
+      <a class="brand brand--text" href="/" aria-label="Caloto.dev home">
         <span>Caloto.dev</span>
       </a>
-      <nav class="nav" aria-label="Primary navigation">
+      <nav class="nav nav--party" aria-label="Primary navigation">
         <a href="/">Home</a>
         <a href="/partykit/privacy/">Privacy</a>
         <a href="mailto:support@caloto.dev">Support</a>
@@ -24,75 +23,59 @@
     </header>
 
     <main>
-      <section class="app-hero">
-        <div class="app-hero__copy">
-          <p class="eyebrow">Party games for local groups</p>
-          <h1>Bring fast party rounds to everyone in the room.</h1>
+      <section class="party-hero">
+        <div class="party-hero__copy">
+          <p class="eyebrow eyebrow--purple">Offline party games</p>
+          <h1>8 games for any party.</h1>
           <p>
-            PartyKit is made for friends playing together face to face, with
-            quick setup, reusable player names and simple game preferences.
+            PartyKit is made for friends in the same room: pass the phone, hide
+            secret roles, draw fast, guess faster and keep the night moving.
           </p>
+          <div class="party-tags">
+            <span>Offline</span>
+            <span>English & Spanish</span>
+            <span>No account required</span>
+          </div>
           <div class="actions">
-            <a class="button button--primary" href="mailto:support@caloto.dev">
+            <a class="button button--purple" href="mailto:support@caloto.dev">
               Contact support
             </a>
-            <a class="button button--secondary" href="/partykit/privacy/">
+            <a class="button button--ghost-party" href="/partykit/privacy/">
               Privacy policy
             </a>
           </div>
         </div>
-
-        <div class="phone-preview" aria-label="PartyKit app preview">
-          <div class="phone-preview__screen">
-            <div class="preview-top">
-              <span>PartyKit</span>
-              <span>4 players</span>
-            </div>
-            <div class="game-card game-card--active">
-              <span>Next round</span>
-              <strong>Guess the Player</strong>
-            </div>
-            <div class="player-grid">
-              <span>Ana</span>
-              <span>Leo</span>
-              <span>Mia</span>
-              <span>Noah</span>
-            </div>
-            <button class="preview-button" type="button">Start game</button>
-          </div>
+        <div class="party-phone-stack" aria-label="PartyKit app screenshots">
+          <img class="shot shot--main" src="/assets/partykit/overview.png" alt="PartyKit games list" />
+          <img class="shot shot--side" src="/assets/partykit/impostor.png" alt="PartyKit secret role" />
         </div>
       </section>
 
-      <section class="content-section">
+      <section class="party-section">
         <div class="section-title">
-          <p class="eyebrow">Built for the same room</p>
-          <h2>Simple, social and ready for quick rounds.</h2>
+          <p class="eyebrow eyebrow--purple">Game modes</p>
+          <h2>Built for quick local rounds.</h2>
         </div>
         <div class="feature-grid">
-          <article class="feature-card">
-            <h3>No account required</h3>
-            <p>Start playing without creating a profile or signing in.</p>
+          <article class="feature-card feature-card--party">
+            <h3>The Impostor</h3>
+            <p>Hide your secret role, pass the phone and act innocent.</p>
           </article>
-          <article class="feature-card">
-            <h3>Local preferences</h3>
-            <p>
-              Recent names, language, theme, sound and haptic choices can stay
-              on your device for faster setup.
-            </p>
+          <article class="feature-card feature-card--party">
+            <h3>Draw & Guess</h3>
+            <p>Teams, timer and instant turns for fast group play.</p>
           </article>
-          <article class="feature-card">
-            <h3>Privacy information</h3>
-            <p>
-              The privacy policy explains local storage, analytics, ads,
-              purchases and your choices.
-            </p>
+          <article class="feature-card feature-card--party">
+            <h3>Truth, dares and more</h3>
+            <p>Multiple party formats in one app, ready without sign-up.</p>
           </article>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <span>Caloto.dev</span>
+    <footer class="footer footer--party">
+      <span>PartyKit</span>
+      <a href="/">Caloto.dev</a>
       <a href="/partykit/privacy/">Privacy Policy</a>
       <a href="mailto:support@caloto.dev">support@caloto.dev</a>
     </footer>
