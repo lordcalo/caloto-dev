@@ -556,10 +556,22 @@ body:not(.theme-dark):not(.theme-party) .site-header {
 }
 
 .legal-page {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   padding: clamp(42px, 6vw, 76px) clamp(18px, 4vw, 32px);
 }
 
+.legal-page--party {
+  background:
+    radial-gradient(circle at 82% 8%, rgba(124, 58, 237, 0.34), transparent 24%),
+    radial-gradient(circle at 12% 92%, rgba(167, 139, 250, 0.16), transparent 26%),
+    var(--party-bg);
+}
+
 .legal-document {
+  width: 100%;
+  min-width: 0;
   max-width: 860px;
   margin: 0 auto;
   padding: clamp(28px, 5vw, 56px);
@@ -567,6 +579,19 @@ body:not(.theme-dark):not(.theme-party) .site-header {
   border-radius: 8px;
   background: #ffffff;
   box-shadow: 0 18px 52px rgba(42, 31, 16, 0.08);
+}
+
+.legal-document * {
+  max-width: 100%;
+}
+
+.theme-party .legal-document {
+  color: var(--text);
+  border-color: rgba(167, 139, 250, 0.22);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.025)),
+    var(--party-panel);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
 }
 
 .legal-document h1 {
@@ -584,9 +609,18 @@ body:not(.theme-dark):not(.theme-party) .site-header {
   color: var(--legal-muted);
 }
 
+.theme-party .legal-document p,
+.theme-party .legal-document li {
+  color: var(--muted);
+}
+
 .legal-document a {
   color: #2563eb;
   font-weight: 750;
+}
+
+.theme-party .legal-document a {
+  color: var(--purple-2);
 }
 
 .updated {
@@ -695,7 +729,7 @@ body:not(.theme-dark):not(.theme-party) .footer {
   }
 
   .dev-hero h1 {
-    max-width: 11ch;
+    max-width: 10.5ch;
     font-size: clamp(2.55rem, 13.2vw, 3.9rem);
   }
 
@@ -803,6 +837,31 @@ body:not(.theme-dark):not(.theme-party) .footer {
   .footer {
     flex-direction: column;
     padding: 26px 16px;
+  }
+
+  .legal-page {
+    padding: 42px 16px;
+  }
+
+  .legal-document {
+    width: 100%;
+    max-width: min(330px, calc(100vw - 32px));
+    margin-right: 0;
+    margin-left: 0;
+    padding: 18px;
+  }
+
+  .legal-document h1 {
+    font-size: clamp(1.85rem, 9vw, 2.35rem);
+    line-height: 1.05;
+  }
+
+  .legal-document h2 {
+    font-size: 1.2rem;
+  }
+
+  .legal-document ul {
+    padding-left: 20px;
   }
 }
 
