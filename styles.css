@@ -1496,6 +1496,51 @@ body:not(.theme-dark):not(.theme-caloto):not(.theme-party):not(.theme-spendflex)
   max-width: 940px;
 }
 
+.contact-form {
+  display: grid;
+  gap: 16px;
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid currentColor;
+}
+
+.contact-form--party {
+  border-top-color: rgba(167, 139, 250, 0.22);
+}
+
+.contact-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid rgba(167, 139, 250, 0.24);
+  border-radius: 8px;
+  padding: 13px 14px;
+  color: var(--text);
+  background: rgba(15, 13, 23, 0.74);
+  font: inherit;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid rgba(196, 181, 253, 0.36);
+  outline-offset: 2px;
+}
+
 @media (max-width: 980px) {
   .dev-hero,
   .delivery-section,
