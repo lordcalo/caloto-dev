@@ -118,10 +118,29 @@
         <p>
           If you have questions about these Terms, contact us at:
         </p>
-        <div class="contact-card contact-card--party">
-          <span>Email</span>
-          <a href="mailto:contact@caloto.dev">contact@caloto.dev</a>
-        </div>
+        <form
+          class="contact-form contact-form--party"
+          id="terms-contact-form"
+          action="/partykit/terms/"
+          method="get"
+        >
+          <label>
+            Name
+            <input name="name" autocomplete="name" />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5"></textarea>
+          </label>
+          <button class="button button--purple" type="submit">Send message</button>
+          <a class="contact-form__mail" href="mailto:contact@caloto.dev">
+            contact@caloto.dev
+          </a>
+        </form>
       </article>
     </main>
 
@@ -132,5 +151,24 @@
       <a href="/partykit/terms/">Terms of Use</a>
       <a href="mailto:contact@caloto.dev">contact@caloto.dev</a>
     </footer>
+    <script>
+      const form = document.getElementById("terms-contact-form");
+      form?.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const data = new FormData(form);
+        const name = String(data.get("name") || "").trim();
+        const email = String(data.get("email") || "").trim();
+        const message = String(data.get("message") || "").trim();
+        const body = [
+          name ? `Name: ${name}` : "",
+          email ? `Email: ${email}` : "",
+          "",
+          message,
+        ].join("\n");
+        window.location.href =
+          "mailto:contact@caloto.dev?subject=PartyKit%20Terms%20question&body=" +
+          encodeURIComponent(body);
+      });
+    </script>
   </body>
 </html>
