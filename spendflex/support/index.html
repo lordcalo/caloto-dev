@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Support page for SpendFlex, including contact information, common help topics, privacy and terms links."
+    />
+    <title>Support | SpendFlex</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="theme-spendflex">
+    <header class="site-header site-header--spendflex">
+      <a class="brand brand--spendflex" href="/spendflex/" aria-label="SpendFlex home">
+        <img src="/assets/spendflex/iconlogo.png" alt="" />
+        <span>SpendFlex</span>
+      </a>
+      <nav class="nav nav--spendflex" aria-label="Primary navigation">
+        <a href="/spendflex/">SpendFlex</a>
+        <a href="/spendflex/privacy/">Privacy</a>
+        <a href="/spendflex/terms/">Terms</a>
+      </nav>
+    </header>
+
+    <main class="legal-page legal-page--spendflex">
+      <article class="legal-document legal-document--spendflex">
+        <p class="eyebrow eyebrow--gold">Support</p>
+        <h1>SpendFlex Support</h1>
+        <p>
+          Need help with SpendFlex, premium access, exports, local data,
+          budgets or app behavior? Contact us and include your device, app
+          version and a short description of the issue.
+        </p>
+
+        <h2>Common topics</h2>
+        <ul>
+          <li>Restoring previous purchases</li>
+          <li>Managing premium access</li>
+          <li>Exporting data from the app</li>
+          <li>Deleting local expenses, categories or preferences</li>
+          <li>Questions about privacy, analytics or advertising</li>
+        </ul>
+
+        <h2>Contact</h2>
+        <p>
+          You can reach us at
+          <a href="mailto:contact@caloto.dev">contact@caloto.dev</a>.
+        </p>
+
+        <form
+          class="contact-form contact-form--spendflex"
+          id="spendflex-support-form"
+          action="/spendflex/support/"
+          method="get"
+        >
+          <label>
+            Name
+            <input name="name" autocomplete="name" />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5"></textarea>
+          </label>
+          <button class="button button--gold" type="submit">Send message</button>
+          <a class="contact-form__mail contact-form__mail--spendflex" href="mailto:contact@caloto.dev">
+            contact@caloto.dev
+          </a>
+        </form>
+
+        <h2>Legal</h2>
+        <p>
+          Read the <a href="/spendflex/privacy/">Privacy Policy</a> and
+          <a href="/spendflex/terms/">Terms of Use</a>.
+        </p>
+      </article>
+    </main>
+
+    <footer class="footer footer--spendflex">
+      <span>SpendFlex</span>
+      <a href="/">Caloto.dev</a>
+      <a href="/spendflex/privacy/">Privacy Policy</a>
+      <a href="/spendflex/terms/">Terms of Use</a>
+      <a href="mailto:contact@caloto.dev">contact@caloto.dev</a>
+    </footer>
+    <script>
+      const form = document.getElementById("spendflex-support-form");
+      form?.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const data = new FormData(form);
+        const name = String(data.get("name") || "").trim();
+        const email = String(data.get("email") || "").trim();
+        const message = String(data.get("message") || "").trim();
+        const body = [
+          name ? `Name: ${name}` : "",
+          email ? `Email: ${email}` : "",
+          "",
+          message,
+        ].join("\n");
+        window.location.href =
+          "mailto:contact@caloto.dev?subject=SpendFlex%20Support&body=" +
+          encodeURIComponent(body);
+      });
+    </script>
+  </body>
+</html>

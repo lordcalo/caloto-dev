@@ -6,10 +6,13 @@ Web estatica para publicar `caloto.dev` gratis en Cloudflare Pages.
 
 - `/`
 - `/partykit/`
+- `/partykit/support/`
 - `/partykit/privacy/`
 - `/partykit/terms/`
 - `/spendflex/`
+- `/spendflex/support/`
 - `/spendflex/privacy/`
+- `/spendflex/terms/`
 
 ## Desarrollo local
 
