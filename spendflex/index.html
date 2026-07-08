@@ -10,16 +10,15 @@
     <title>SpendFlex | Control your money. Your way.</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
-  <body class="theme-spendflex">
-    <header class="site-header site-header--spendflex">
-      <a class="brand brand--spendflex" href="/spendflex/" aria-label="SpendFlex home">
+  <body class="theme-spendflex spendflex-minimal">
+    <header class="sfm-header">
+      <a class="sfm-brand" href="/spendflex/" aria-label="SpendFlex home">
         <img src="/assets/spendflex/iconlogo.png" alt="" />
         <span>SpendFlex</span>
       </a>
-      <nav class="nav nav--spendflex" aria-label="Primary navigation">
+      <nav class="sfm-nav" aria-label="Primary navigation">
         <a href="/">Caloto.dev</a>
-        <a href="#screens">Screens</a>
-        <a href="#control">Control</a>
+        <a href="#product">Product</a>
         <a href="#private">Private</a>
         <a href="/spendflex/support/">Support</a>
         <a href="/spendflex/privacy/">Privacy</a>
@@ -28,250 +27,122 @@
     </header>
 
     <main>
-      <section class="sf-hero sf-hero--editorial">
-        <div class="sf-hero__copy">
-          <p class="eyebrow eyebrow--gold">Private personal finance</p>
+      <section class="sfm-hero">
+        <div class="sfm-hero__copy">
+          <img class="sfm-logo" src="/assets/spendflex/iconlogo.png" alt="" />
+          <p class="sfm-kicker">Private money control</p>
           <h1>Control your money. Your way.</h1>
-          <p>
-            SpendFlex is a premium manual money tracker for people who want a
-            clear budget, visible habits and private records without connecting
-            a bank account.
+          <p class="sfm-lead">
+            SpendFlex is a premium manual finance app for tracking expenses,
+            income, budgets and savings without connecting a bank account.
           </p>
-          <div class="sf-proofline">
-            <span>No bank login</span>
-            <span>No account required</span>
-            <span>Offline-first records</span>
-            <span>Reports and backups</span>
-          </div>
-          <div class="sf-hero__actions">
-            <a class="button button--gold" href="/spendflex/support/">Contact support</a>
-            <a class="button button--sf-ghost" href="/spendflex/privacy/">Privacy Policy</a>
+          <div class="sfm-actions">
+            <a class="sfm-button sfm-button--primary" href="/spendflex/support/">Support</a>
+            <a class="sfm-button" href="/spendflex/privacy/">Privacy</a>
           </div>
         </div>
 
-        <div class="sf-hero__visual" aria-label="SpendFlex app preview">
-          <figure class="sf-promo-cover">
+        <div class="sfm-phone-stage" aria-label="SpendFlex app preview">
+          <figure class="sfm-phone sfm-phone--rear">
             <img
-              src="/assets/spendflex/promo/month-glance.jpg"
-              alt="SpendFlex monthly dashboard showing budget progress, daily budget and category breakdown"
-              width="852"
-              height="1846"
+              src="/assets/spendflex/screens/budget-device.jpg"
+              alt="SpendFlex budget controls"
+              width="680"
+              height="1320"
+            />
+          </figure>
+          <figure class="sfm-phone sfm-phone--front">
+            <img
+              src="/assets/spendflex/screens/home-device.jpg"
+              alt="SpendFlex monthly dashboard"
+              width="650"
+              height="1280"
               fetchpriority="high"
             />
           </figure>
-          <div class="sf-hero-note">
-            <span>01</span>
-            <strong>Monthly control</strong>
-            <p>Budgets, income, daily allowance and category pressure in one calm view.</p>
-          </div>
+          <figure class="sfm-phone sfm-phone--back">
+            <img
+              src="/assets/spendflex/screens/stats-device.jpg"
+              alt="SpendFlex stats and trend chart"
+              width="680"
+              height="1290"
+            />
+          </figure>
         </div>
       </section>
 
-      <section class="sf-marquee" aria-label="SpendFlex core promises">
-        <span>Manual clarity</span>
-        <span>Adaptive budgets</span>
-        <span>Visible goals</span>
-        <span>Private records</span>
+      <section class="sfm-proof" aria-label="SpendFlex principles">
+        <span>No bank login</span>
+        <span>No account required</span>
+        <span>Local-first records</span>
+        <span>PDF, CSV and Excel</span>
       </section>
 
-      <section class="sf-editorial sf-editorial--tight" id="control">
+      <section class="sfm-intro" id="product">
         <div>
-          <p class="eyebrow eyebrow--gold">Built from the real app</p>
-          <h2>Luxury on the surface. Discipline underneath.</h2>
+          <p class="sfm-kicker">Built for daily discipline</p>
+          <h2>A calmer way to see the month.</h2>
         </div>
-        <div class="sf-copy-stack">
-          <p>
-            SpendFlex is intentionally manual. Logging a purchase is fast enough
-            to become a habit, but deliberate enough to keep spending visible.
-            The app combines expenses, income, budget cycles, savings goals,
-            recurring charges and exportable reports in a private ledger.
-          </p>
-          <div class="sf-metrics-row" aria-label="SpendFlex product capabilities">
-            <div><strong>2 taps</strong><span>quick manual capture</span></div>
-            <div><strong>Any cycle</strong><span>calendar or payday months</span></div>
-            <div><strong>Local</strong><span>records stay on device</span></div>
-          </div>
-        </div>
+        <p>
+          SpendFlex keeps the ritual simple: add what happened, see what is
+          left, understand which categories are moving and stay ahead of fixed
+          costs before they distort the month.
+        </p>
       </section>
 
-      <section class="sf-product-scenes" id="screens">
-        <div class="sf-section-heading">
-          <p class="eyebrow eyebrow--gold">Core experience</p>
-          <h2>Every money decision gets a quieter interface.</h2>
-          <p>
-            The website now shows the actual product screens: capture, history,
-            analytics, fixed costs, goals and privacy controls.
-          </p>
-        </div>
-
-        <div class="sf-screen-triptych">
-          <article class="sf-screen-card">
-            <img
-              src="/assets/spendflex/promo/log-expenses.jpg"
-              alt="SpendFlex add expense screen with amount, categories, date and receipt photo"
-              width="852"
-              height="1846"
-              loading="lazy"
-            />
-            <div>
-              <span>Capture</span>
-              <h3>Log expenses and income in seconds.</h3>
-              <p>Fast manual entry with categories, dates, currency and optional receipt photos.</p>
-            </div>
-          </article>
-
-          <article class="sf-screen-card sf-screen-card--raised">
-            <img
-              src="/assets/spendflex/promo/budgets.jpg"
-              alt="SpendFlex budgets screen with monthly budget, category limits, daily budget and alerts"
-              width="852"
-              height="1846"
-              loading="lazy"
-            />
-            <div>
-              <span>Budgeting</span>
-              <h3>Budgets that adapt to real life.</h3>
-              <p>Monthly limits, category budgets, rollover, daily allowance and custom cycles.</p>
-            </div>
-          </article>
-
-          <article class="sf-screen-card">
-            <img
-              src="/assets/spendflex/promo/trends.jpg"
-              alt="SpendFlex stats screen with trend chart and spending heatmap"
-              width="852"
-              height="1846"
-              loading="lazy"
-            />
-            <div>
-              <span>Insight</span>
-              <h3>Trends without spreadsheet fatigue.</h3>
-              <p>Period comparison, six-period trend, heatmaps, cashflow and PDF reports.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="sf-feature-grid sf-feature-grid--six" aria-label="SpendFlex feature list">
+      <section class="sfm-product">
         <article>
-          <span>01</span>
-          <h3>Expense and income tracking</h3>
-          <p>Switch between spending and income, classify each entry and keep the month honest.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Flexible budget cycles</h3>
-          <p>Use calendar months or a fixed payday cycle, then carry surplus or deficit forward.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Category limits</h3>
-          <p>Set limits where money leaks happen, with alerts before the budget gets away.</p>
-        </article>
-        <article>
-          <span>04</span>
-          <h3>Recurring charges</h3>
-          <p>Track fixed costs, subscriptions and upcoming payments before they hit your budget.</p>
-        </article>
-        <article>
-          <span>05</span>
-          <h3>Savings goals</h3>
-          <p>Make targets visible with deadlines, monthly requirements and contribution progress.</p>
-        </article>
-        <article>
-          <span>06</span>
-          <h3>Exports and private backup</h3>
-          <p>Create CSV, Excel and PDF reports, then back up through your own files and drives.</p>
-        </article>
-      </section>
-
-      <section class="sf-gallery" aria-label="SpendFlex screenshots">
-        <div class="sf-section-heading sf-section-heading--split">
+          <img src="/assets/spendflex/screens/add-device.jpg" alt="SpendFlex add expense screen" width="680" height="1290" loading="lazy" />
           <div>
-            <p class="eyebrow eyebrow--gold">Product gallery</p>
-            <h2>Nine screens. One controlled financial rhythm.</h2>
+            <span>Capture</span>
+            <h3>Log fast, stay aware.</h3>
+            <p>Expenses, income, categories, currency and receipt photos in a focused flow.</p>
           </div>
-          <p>
-            SpendFlex keeps the interface calm while the app does the practical
-            work: find transactions, forecast pressure, detect recurring costs
-            and keep private data under your control.
-          </p>
-        </div>
-
-        <div class="sf-gallery-rail">
-          <figure>
-            <img src="/assets/spendflex/promo/transactions.jpg" alt="SpendFlex transactions search and filters" width="852" height="1846" loading="lazy" />
-            <figcaption>Find every transaction</figcaption>
-          </figure>
-          <figure>
-            <img src="/assets/spendflex/promo/fixed-costs.jpg" alt="SpendFlex detected subscriptions screen" width="852" height="1846" loading="lazy" />
-            <figcaption>Stay ahead of fixed costs</figcaption>
-          </figure>
-          <figure>
-            <img src="/assets/spendflex/promo/savings-goals.jpg" alt="SpendFlex savings goals progress screen" width="852" height="1846" loading="lazy" />
-            <figcaption>Visible savings goals</figcaption>
-          </figure>
-          <figure>
-            <img src="/assets/spendflex/promo/private-data.jpg" alt="SpendFlex settings screen with privacy and backup controls" width="852" height="1846" loading="lazy" />
-            <figcaption>Your data stays yours</figcaption>
-          </figure>
-          <figure>
-            <img src="/assets/spendflex/promo/insights.jpg" alt="SpendFlex spending insights screen with budget health and forecast cards" width="852" height="1846" loading="lazy" />
-            <figcaption>Understand your spending</figcaption>
-          </figure>
-        </div>
+        </article>
+        <article>
+          <img src="/assets/spendflex/screens/budget-device.jpg" alt="SpendFlex budget screen" width="680" height="1320" loading="lazy" />
+          <div>
+            <span>Budget</span>
+            <h3>Make the month behave.</h3>
+            <p>Monthly limits, category budgets, custom cycles, daily allowance and alerts.</p>
+          </div>
+        </article>
+        <article>
+          <img src="/assets/spendflex/screens/fixed-device.jpg" alt="SpendFlex recurring costs screen" width="760" height="1320" loading="lazy" />
+          <div>
+            <span>Forecast</span>
+            <h3>Know what is coming.</h3>
+            <p>Recurring costs, subscription detection, trends, goals and clean reports.</p>
+          </div>
+        </article>
       </section>
 
-      <section class="sf-dashboard sf-dashboard--refined">
-        <div class="sf-dashboard__copy">
-          <p class="eyebrow eyebrow--gold">Premium tools</p>
-          <h2>Reports when you need them. Silence when you do not.</h2>
+      <section class="sfm-private" id="private">
+        <div class="sfm-private__screen">
+          <img src="/assets/spendflex/screens/privacy-device.jpg" alt="SpendFlex privacy and backup settings" width="680" height="1290" loading="lazy" />
+        </div>
+        <div class="sfm-private__copy">
+          <p class="sfm-kicker">Private by design</p>
+          <h2>Your data stays yours.</h2>
           <p>
-            Export the ledger, review any period, protect the app with device
-            lock and keep backups in storage you control. SpendFlex gives you
-            structure without turning personal finance into another inbox.
+            No bank credentials. No account required. Core financial records
+            stay on your device, with export and backup flows built around your
+            own files.
           </p>
-        </div>
-        <div class="sf-ledger sf-ledger--premium">
-          <div><span>Budget modes</span><strong>Monthly + daily</strong></div>
-          <div><span>Reports</span><strong>PDF, CSV, Excel</strong></div>
-          <div><span>Security</span><strong>Face ID / passcode</strong></div>
-          <div><span>Data model</span><strong>Local first</strong></div>
-        </div>
-      </section>
-
-      <section class="sf-private sf-private--product" id="private">
-        <div class="sf-private__image sf-private__image--screen">
-          <img
-            src="/assets/spendflex/promo/private-data.jpg"
-            alt="SpendFlex privacy settings showing local data, export and backup options"
-            width="852"
-            height="1846"
-            loading="lazy"
-          />
-        </div>
-        <div class="sf-private__copy">
-          <p class="eyebrow eyebrow--gold">Private by design</p>
-          <h2>No bank login. No account. No cloud ledger.</h2>
-          <p>
-            Core financial records are stored locally on your device. SpendFlex
-            does not need your bank credentials or a user account to help you
-            understand spending, income, goals and recurring commitments.
-          </p>
-          <div class="sf-link-row">
-            <a class="text-link" href="/spendflex/privacy/">Read the privacy policy</a>
-            <a class="text-link" href="/spendflex/terms/">Read the terms</a>
+          <div class="sfm-actions">
+            <a class="sfm-button sfm-button--primary" href="/spendflex/privacy/">Privacy Policy</a>
+            <a class="sfm-button" href="/spendflex/terms/">Terms of Use</a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer footer--spendflex">
+    <footer class="sfm-footer">
       <span>SpendFlex</span>
       <a href="/">Caloto.dev</a>
       <a href="/spendflex/support/">Support</a>
-      <a href="/spendflex/terms/">Terms of Use</a>
-      <a href="/spendflex/privacy/">Privacy Policy</a>
+      <a href="/spendflex/terms/">Terms</a>
+      <a href="/spendflex/privacy/">Privacy</a>
       <a href="mailto:contact@caloto.dev">contact@caloto.dev</a>
     </footer>
   </body>
