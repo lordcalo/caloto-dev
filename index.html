@@ -3,253 +3,382 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>document.documentElement.classList.add("js");</script>
+    <title>Alfredo Caloto — Solution Architect &amp; Tech Lead</title>
     <meta
       name="description"
-      content="Alfredo Caloto, Solution Architect, Tech Lead and backend engineer with experience in marketplace payments, Adyen, Mirakl and Stripe."
+      content="Alfredo Caloto, Solution Architect and Tech Lead for payment-heavy platforms: Adyen and Mirakl marketplaces, Stripe-certified architecture, AWS backend engineering — and independent apps SpendFlex and PartyKit."
     />
-    <title>Alfredo Caloto | Solution Architect & Tech Lead</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="canonical" href="https://caloto.dev/" />
+    <meta name="theme-color" content="#0B0B0D" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="caloto.dev" />
+    <meta property="og:title" content="Alfredo Caloto — Solution Architect &amp; Tech Lead" />
+    <meta
+      property="og:description"
+      content="Backend leadership for payment-heavy platforms. Adyen & Mirakl marketplaces, Stripe-certified architecture — and independent apps SpendFlex and PartyKit."
+    />
+    <meta property="og:image" content="https://caloto.dev/assets/brand/og-main.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A. Caloto signature logo on black with a gold rule." />
+    <meta property="og:url" content="https://caloto.dev/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/assets/brand/acaloto-192.png" />
+    <link rel="apple-touch-icon" href="/assets/brand/acaloto-192.png" />
+    <link
+      rel="preload"
+      href="/assets/spendflex/fonts/playfair.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/spendflex/fonts/playfair-italic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/home.css" />
   </head>
-  <body class="theme-caloto">
-    <header class="site-header site-header--dark">
-      <a class="brand brand--logo" href="/" aria-label="Caloto.dev home">
-        <img src="/assets/brand/acaloto.png" alt="A. Caloto" />
-      </a>
-      <nav class="nav nav--dark" aria-label="Primary navigation">
-        <a href="#expertise">Expertise</a>
-        <a href="#delivery">Delivery</a>
-        <a href="#apps">Products</a>
-        <a href="mailto:contact@caloto.dev">Contact</a>
-      </nav>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-head">
+      <div class="shell site-head__row">
+        <a class="brand" href="/" aria-label="Caloto.dev home">
+          <img src="/assets/brand/acaloto-192.png" alt="A. Caloto" width="192" height="192" />
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#expertise">Expertise</a>
+          <a href="#delivery">Delivery</a>
+          <a href="#products">Products</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="head-cta" href="mailto:contact@caloto.dev">Work with me</a>
+      </div>
     </header>
 
-    <main>
-      <section class="dev-hero dev-hero--refined">
-        <div class="dev-hero__content">
-          <p class="eyebrow eyebrow--gold">Solution Architect / Tech Lead</p>
-          <h1>Backend leadership for payment-heavy platforms.</h1>
-          <p class="lead">
-            I'm Alfredo Caloto. I work where backend architecture, payment
-            operations, marketplace complexity and client delivery need one
-            accountable technical owner.
-          </p>
-          <div class="hero-proof" aria-label="Professional focus">
-            <span>Adyen & Mirakl marketplaces</span>
-            <span>Stripe certified architect</span>
-            <span>Tech Lead & team coordination</span>
+    <main id="main">
+      <!-- ================================ Hero ================================ -->
+      <section class="hero" aria-label="Introduction">
+        <div class="hero__dots" aria-hidden="true"></div>
+        <div class="shell hero__grid">
+          <div class="hero__copy reveal">
+            <p class="kicker">Solution Architect · Tech Lead</p>
+            <h1>Backend leadership for <em>payment-heavy platforms.</em></h1>
+            <p class="hero__lead">
+              I'm Alfredo Caloto. I work where backend architecture, payment
+              operations, marketplace complexity and client delivery need one
+              accountable technical owner.
+            </p>
+            <div class="actions">
+              <a class="button button--gold" href="mailto:contact@caloto.dev">Work with me</a>
+              <a class="button" href="/assets/brand/alfredo-caloto-cv.pdf">Download CV</a>
+              <a class="button" href="https://www.linkedin.com/in/alfredocaloto/">LinkedIn</a>
+            </div>
+            <p class="trust">
+              <span>Adyen &amp; Mirakl marketplaces</span>
+              <span>Stripe certified</span>
+              <span>AWS · Java · Node</span>
+            </p>
           </div>
+
+          <aside class="panel reveal" data-d="1" aria-label="Professional profile">
+            <img src="/assets/brand/acaloto-512.png" alt="A. Caloto signature logo" width="512" height="512" />
+            <div class="panel__metric">
+              <span>Focus</span>
+              <strong>Marketplace payments</strong>
+            </div>
+            <div class="panel__list">
+              <span>Adyen / Mirakl connector leadership</span>
+              <span>Stripe Billing &amp; Implementation certified</span>
+              <span>AWS Lambda, SQS, PostgreSQL, Java, Node.js</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ============================ Credentials ============================ -->
+      <section class="creds" aria-label="Core credentials">
+        <div class="shell creds__grid">
+          <div class="creds__item reveal">
+            <span>Current role</span>
+            <strong>Tech Lead, Marketplace Payments Platform</strong>
+          </div>
+          <div class="creds__item reveal" data-d="1">
+            <span>Certified</span>
+            <strong>Stripe Billing &amp; Implementation Architect</strong>
+          </div>
+          <div class="creds__item reveal" data-d="2">
+            <span>Domain</span>
+            <strong>Adyen, Mirakl, Stripe, SAP Commerce</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== Expertise ============================== -->
+      <section class="expertise" id="expertise">
+        <div class="shell expertise__grid">
+          <div class="expertise__intro reveal">
+            <p class="kicker">Expertise</p>
+            <h2>Fintech delivery with <em>architectural ownership.</em></h2>
+            <p>
+              Payments is where correctness, reliability and commercial pressure
+              meet. That intersection is my working territory.
+            </p>
+          </div>
+
+          <div>
+            <article class="expertise-item reveal">
+              <span class="expertise-item__num" aria-hidden="true">01</span>
+              <div>
+                <h3>Marketplace payment platforms</h3>
+                <p>
+                  Technical lead of Adyen and Mirakl connector work: sellers,
+                  payments, commissions, invoices and financial synchronization
+                  across marketplace platforms.
+                </p>
+              </div>
+            </article>
+            <article class="expertise-item reveal">
+              <span class="expertise-item__num" aria-hidden="true">02</span>
+              <div>
+                <h3>Stripe architecture</h3>
+                <p>
+                  Stripe Certified Professional Billing Architect and
+                  Implementation Architect, supporting companies on payment
+                  architecture and integrations.
+                </p>
+              </div>
+            </article>
+            <article class="expertise-item reveal">
+              <span class="expertise-item__num" aria-hidden="true">03</span>
+              <div>
+                <h3>Backend and cloud engineering</h3>
+                <p>
+                  Node.js, Java, Spring Boot, GraphQL, AWS Lambda, SQS,
+                  PostgreSQL, MongoDB and event-driven backend systems.
+                </p>
+              </div>
+            </article>
+            <article class="expertise-item reveal">
+              <span class="expertise-item__num" aria-hidden="true">04</span>
+              <div>
+                <h3>Teams, RFCs and clients</h3>
+                <p>
+                  Architecture decisions, development team coordination,
+                  international stakeholders, technical proposals and RFC
+                  analysis for new clients.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== Delivery ============================== -->
+      <section class="manifesto" id="delivery">
+        <div class="shell">
+          <p class="kicker">Delivery</p>
+          <h2>Hands-on enough to build. <em>Senior enough to lead.</em></h2>
+          <div class="manifesto__grid">
+            <div class="manifesto__copy reveal">
+              <p>
+                At Seidor I work as Tech Lead on marketplace payment platforms,
+                making architecture and reliability decisions for distributed
+                backend systems built with AWS Lambda, SQS and PostgreSQL.
+              </p>
+              <p>
+                Before that: Adyen integrations, SAP Commerce automotive
+                marketplace work, Mirakl marketplace integrations and
+                Capgemini/Inditex microservice migrations with Java, Spring
+                Boot, Kafka, MongoDB and IBM MQ.
+              </p>
+            </div>
+            <ul class="principles reveal" data-d="1">
+              <li>
+                <div>
+                  <strong>Clear ownership</strong>
+                  <span>Technical direction, tradeoffs, RFCs and stakeholder alignment without hiding behind process.</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Backend depth</strong>
+                  <span>Event-driven services, financial workflows and large operational datasets, hands-on.</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Client fluency</strong>
+                  <span>Architecture translated into implementation plans clients and teams can actually execute.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== Products ============================== -->
+      <section class="products-section" id="products">
+        <div class="shell">
+          <div class="products-section__head reveal">
+            <p class="kicker">Own products</p>
+            <h2>Independent apps, built <em>with taste and restraint.</em></h2>
+            <p>
+              Two live apps on the App Store and Google Play — each with its own
+              brand, designed and engineered end to end.
+            </p>
+          </div>
+
+          <div class="products">
+            <article class="product product--spendflex reveal">
+              <div>
+                <p class="product__name">Spend<b>Flex</b></p>
+                <span class="product__tag">Private budget &amp; expense tracker</span>
+                <h3>Control your money. <em>Your way.</em></h3>
+                <p class="product__body">
+                  A private, offline-first expense tracker and budget planner —
+                  budgets, savings goals, insights and reports, with no bank
+                  login and nothing leaving your device.
+                </p>
+                <div class="product__actions">
+                  <a class="product__cta" href="/spendflex/">Visit SpendFlex</a>
+                  <a class="product__link" href="https://apps.apple.com/app/id6771418134">App Store</a>
+                  <a
+                    class="product__link"
+                    href="https://play.google.com/store/apps/details?id=dev.caloto.spendflex"
+                    >Google Play</a
+                  >
+                </div>
+              </div>
+              <a class="product__shot" href="/spendflex/" aria-label="Visit SpendFlex" tabindex="-1">
+                <img
+                  src="/assets/spendflex/app/home.jpg"
+                  alt="SpendFlex home screen with spending donut and category breakdown"
+                  width="640"
+                  height="1390"
+                  loading="lazy"
+                />
+              </a>
+            </article>
+
+            <article class="product product--partykit reveal" data-d="1">
+              <div>
+                <p class="product__name">Party<b>Kit</b></p>
+                <span class="product__tag">13 party games in one app</span>
+                <h3>Pass the phone. <em>Start the party.</em></h3>
+                <p class="product__body">
+                  Thirteen pass-and-play party games — secret roles, drawing
+                  chaos, rapid-fire trivia. Fully offline, English &amp;
+                  Spanish, no accounts.
+                </p>
+                <div class="product__actions">
+                  <a class="product__cta" href="/partykit/">Visit PartyKit</a>
+                  <a class="product__link" href="https://apps.apple.com/app/id6769780008">App Store</a>
+                  <a
+                    class="product__link"
+                    href="https://play.google.com/store/apps/details?id=dev.caloto.partykit"
+                    >Google Play</a
+                  >
+                </div>
+              </div>
+              <a class="product__shot" href="/partykit/" aria-label="Visit PartyKit" tabindex="-1">
+                <img
+                  src="/assets/partykit/app/home.jpg"
+                  alt="PartyKit home screen with the games grid"
+                  width="640"
+                  height="1031"
+                  loading="lazy"
+                />
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================ CTA ================================ -->
+      <section class="cta" id="contact">
+        <div class="shell reveal">
+          <p class="kicker" style="justify-content: center; display: flex">Contact</p>
+          <h2>One accountable <em>technical owner.</em></h2>
+          <p>
+            Payment platforms, marketplace integrations, backend architecture —
+            if it has to work in production, let's talk.
+          </p>
           <div class="actions">
-            <a class="button button--gold" href="mailto:contact@caloto.dev">
-              Work with me
-            </a>
-            <a class="button button--ghost" href="/assets/brand/alfredo-caloto-cv.pdf">
-              Download CV
-            </a>
-            <a
-              class="button button--ghost"
-              href="https://www.linkedin.com/in/alfredocaloto/"
-            >
-              LinkedIn
-            </a>
+            <a class="button button--gold" href="mailto:contact@caloto.dev">contact@caloto.dev</a>
+            <a class="button" href="https://www.linkedin.com/in/alfredocaloto/">LinkedIn</a>
+            <a class="button" href="/assets/brand/alfredo-caloto-cv.pdf">Download CV</a>
           </div>
         </div>
-        <aside class="architect-panel" aria-label="Professional profile">
-          <img src="/assets/brand/acaloto.png" alt="A. Caloto" />
-          <div class="architect-panel__metric">
-            <span>Focus</span>
-            <strong>Marketplace payments</strong>
-          </div>
-          <div class="architect-panel__list">
-            <span>Adyen / Mirakl connector leadership</span>
-            <span>Stripe Billing & Implementation certified</span>
-            <span>AWS Lambda, SQS, PostgreSQL, Java, Node.js</span>
-          </div>
-        </aside>
-      </section>
-
-      <section class="cred-strip" aria-label="Core credentials">
-        <div>
-          <span>Current role</span>
-          <strong>Tech Lead, Marketplace Payments Platform</strong>
-        </div>
-        <div>
-          <span>Certified</span>
-          <strong>Stripe Billing & Implementation Architect</strong>
-        </div>
-        <div>
-          <span>Domain</span>
-          <strong>Adyen, Mirakl, Stripe, SAP Commerce</strong>
-        </div>
-      </section>
-
-      <section class="expertise-band" id="expertise">
-        <div class="section-title">
-          <p class="eyebrow eyebrow--gold">Expertise</p>
-          <h2>Fintech delivery with architectural ownership.</h2>
-        </div>
-        <div class="expertise-grid">
-          <article class="expertise-card expertise-card--featured">
-            <span>01</span>
-            <h3>Marketplace payment platforms</h3>
-            <p>
-              Technical lead of Adyen and Mirakl connector work: sellers,
-              payments, commissions, invoices and financial synchronization
-              across marketplace platforms.
-            </p>
-          </article>
-          <article class="expertise-card">
-            <span>02</span>
-            <h3>Stripe architecture</h3>
-            <p>
-              Stripe Certified Professional Billing Architect and Implementation
-              Architect, with experience supporting companies on payment
-              architecture and integrations.
-            </p>
-          </article>
-          <article class="expertise-card">
-            <span>03</span>
-            <h3>Backend and cloud engineering</h3>
-            <p>
-              Node.js, Java, Spring Boot, GraphQL, AWS Lambda, SQS, PostgreSQL,
-              MongoDB and event-driven backend systems.
-            </p>
-          </article>
-          <article class="expertise-card">
-            <span>04</span>
-            <h3>Teams, RFCs and clients</h3>
-            <p>
-              Architecture decisions, development team coordination,
-              international stakeholders, technical proposals and RFC analysis
-              for new clients.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="delivery-section" id="delivery">
-        <div>
-          <p class="eyebrow eyebrow--gold">Delivery</p>
-          <h2>Hands-on enough to build. Senior enough to lead.</h2>
-        </div>
-        <div class="delivery-copy">
-          <p>
-            At Seidor I work as Tech Lead on marketplace payment platforms,
-            making architecture and reliability decisions for distributed
-            backend systems built with AWS Lambda, SQS and PostgreSQL.
-          </p>
-          <p>
-            Before that I worked across Adyen integrations, SAP Commerce
-            automotive marketplace work, Mirakl marketplace integrations and
-            Capgemini/Inditex microservice migration projects using Java,
-            Spring Boot, Kafka, MongoDB and IBM MQ.
-          </p>
-        </div>
-      </section>
-
-      <section class="principles-section">
-        <div class="section-title">
-          <p class="eyebrow eyebrow--gold">Operating style</p>
-          <h2>Architecture that survives production reality.</h2>
-        </div>
-        <div class="principles-grid">
-          <article>
-            <span>01</span>
-            <h3>Clear ownership</h3>
-            <p>Technical direction, tradeoffs, RFCs and stakeholder alignment without hiding behind process.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Backend depth</h3>
-            <p>Hands-on experience across event-driven services, financial workflows and large operational datasets.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Client fluency</h3>
-            <p>Comfortable translating architecture into implementation plans clients and teams can actually execute.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="apps-showcase" id="apps">
-        <div class="section-title">
-          <p class="eyebrow eyebrow--gold">Own products</p>
-          <h2>Independent apps built with taste and restraint.</h2>
-        </div>
-        <article class="app-card app-card--spendflex">
-          <div class="app-card__copy">
-            <p class="eyebrow eyebrow--gold">SpendFlex</p>
-            <h3>Elegant control over personal spending.</h3>
-            <p>
-              A private, offline-first personal finance app for ambitious young
-              professionals who want a calmer, more refined way to understand
-              their money.
-            </p>
-            <div class="actions">
-              <a class="button button--gold" href="/spendflex/">View SpendFlex</a>
-              <a class="button button--ghost-dark" href="/spendflex/privacy/">
-                Privacy Policy
-              </a>
-              <a class="button button--ghost-dark" href="/spendflex/support/">
-                Support
-              </a>
-            </div>
-          </div>
-          <div class="spendflex-card-mark spendflex-card-mark--preview" aria-label="SpendFlex brand preview">
-            <img
-              class="spendflex-card-mark__logo"
-              src="/assets/spendflex/fulllogo.png"
-              alt="SpendFlex logo"
-            />
-            <img
-              class="spendflex-card-mark__screen"
-              src="/assets/spendflex/app/home.jpg"
-              alt="SpendFlex monthly dashboard preview"
-              width="640"
-              height="1390"
-              loading="lazy"
-            />
-          </div>
-        </article>
-        <article class="app-card">
-          <div class="app-card__copy">
-            <p class="eyebrow eyebrow--purple">PartyKit</p>
-            <h3>Party games for groups playing in the same room.</h3>
-            <p>
-              Offline-first, English and Spanish, built around instant rounds,
-              secret roles and simple setup for friends at a party.
-            </p>
-            <div class="actions">
-              <a class="button button--purple" href="/partykit/">View PartyKit</a>
-              <a class="button button--ghost-dark" href="/partykit/privacy/">
-                Privacy Policy
-              </a>
-              <a class="button button--ghost-dark" href="/partykit/terms/">
-                Terms
-              </a>
-              <a class="button button--ghost-dark" href="/partykit/support/">
-                Support
-              </a>
-            </div>
-          </div>
-          <div class="screenshot-strip" aria-label="PartyKit screenshots">
-            <img src="/assets/partykit/overview.png" alt="PartyKit games screen" />
-            <img src="/assets/partykit/impostor.png" alt="PartyKit secret role screen" />
-            <img src="/assets/partykit/draw.png" alt="PartyKit draw and guess screen" />
-          </div>
-        </article>
       </section>
     </main>
 
-    <footer class="footer footer--dark">
-      <span>Caloto.dev</span>
-      <a href="mailto:contact@caloto.dev">contact@caloto.dev</a>
-      <a href="https://www.linkedin.com/in/alfredocaloto/">LinkedIn</a>
-      <a href="/spendflex/support/">SpendFlex Support</a>
-      <a href="/spendflex/terms/">SpendFlex Terms</a>
-      <a href="/spendflex/privacy/">SpendFlex Privacy Policy</a>
-      <a href="/partykit/support/">PartyKit Support</a>
-      <a href="/partykit/privacy/">PartyKit Privacy Policy</a>
-      <a href="/partykit/terms/">PartyKit Terms</a>
+    <footer class="site-foot">
+      <div class="shell site-foot__row">
+        <span class="site-foot__brand">Caloto.dev</span>
+        <nav aria-label="Footer">
+          <a href="/spendflex/">SpendFlex</a>
+          <a href="/partykit/">PartyKit</a>
+          <a href="https://www.linkedin.com/in/alfredocaloto/">LinkedIn</a>
+          <a href="mailto:contact@caloto.dev">contact@caloto.dev</a>
+        </nav>
+        <p class="site-foot__legal">
+          © 2026 caloto.dev — Alfredo Caloto. All rights reserved. ·
+          <a href="/spendflex/privacy/" style="letter-spacing: normal; text-transform: none; font-size: inherit">SpendFlex Privacy</a> ·
+          <a href="/spendflex/terms/" style="letter-spacing: normal; text-transform: none; font-size: inherit">Terms</a> ·
+          <a href="/spendflex/support/" style="letter-spacing: normal; text-transform: none; font-size: inherit">Support</a> ·
+          <a href="/partykit/privacy/" style="letter-spacing: normal; text-transform: none; font-size: inherit">PartyKit Privacy</a> ·
+          <a href="/partykit/terms/" style="letter-spacing: normal; text-transform: none; font-size: inherit">Terms</a> ·
+          <a href="/partykit/support/" style="letter-spacing: normal; text-transform: none; font-size: inherit">Support</a>
+        </p>
+      </div>
     </footer>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Alfredo Caloto",
+        "url": "https://caloto.dev/",
+        "jobTitle": "Solution Architect & Tech Lead",
+        "email": "mailto:contact@caloto.dev",
+        "sameAs": ["https://www.linkedin.com/in/alfredocaloto/"],
+        "knowsAbout": [
+          "Marketplace payments",
+          "Adyen",
+          "Mirakl",
+          "Stripe",
+          "AWS",
+          "Backend architecture"
+        ]
+      }
+    </script>
+
+    <script>
+      (function () {
+        var els = document.querySelectorAll(".reveal");
+        var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (reduce || !("IntersectionObserver" in window)) {
+          els.forEach(function (el) { el.classList.add("in"); });
+          return;
+        }
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("in");
+                io.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+        );
+        els.forEach(function (el) { io.observe(el); });
+      })();
+    </script>
   </body>
 </html>

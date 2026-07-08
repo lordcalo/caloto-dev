@@ -3,100 +3,482 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>document.documentElement.classList.add("js");</script>
+    <title>PartyKit — 13 Party Games in One App, Fully Offline</title>
     <meta
       name="description"
-      content="PartyKit is a party games app designed for groups playing together in the same room."
+      content="PartyKit turns one phone into game night: 13 pass-and-play party games — Impostor, Draw & Guess, Trivia and more. Offline, English & Spanish, no accounts."
     />
-    <title>PartyKit | Caloto.dev</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="canonical" href="https://caloto.dev/partykit/" />
+    <meta name="theme-color" content="#0F0D17" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PartyKit" />
+    <meta property="og:title" content="PartyKit — Pass the phone. Start the party." />
+    <meta
+      property="og:description"
+      content="13 pass-and-play party games in one app: secret roles, drawing chaos, rapid-fire trivia. Fully offline, English & Spanish, no accounts."
+    />
+    <meta property="og:image" content="https://caloto.dev/assets/partykit/promo/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Three PartyKit app screens on a night-purple glow background."
+    />
+    <meta property="og:url" content="https://caloto.dev/partykit/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/assets/partykit/icon-192.png" />
+    <link rel="apple-touch-icon" href="/assets/partykit/icon-192.png" />
+    <link rel="stylesheet" href="/partykit/landing.css" />
   </head>
-  <body class="theme-party">
-    <header class="site-header site-header--party">
-      <a class="brand brand--text" href="/" aria-label="Caloto.dev home">
-        <span>Caloto.dev</span>
-      </a>
-      <nav class="nav nav--party" aria-label="Primary navigation">
-        <a href="/">Home</a>
-        <a href="/partykit/support/">Support</a>
-        <a href="/partykit/privacy/">Privacy</a>
-        <a href="/partykit/terms/">Terms</a>
-      </nav>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-head">
+      <div class="shell site-head__row">
+        <a class="brand" href="/partykit/" aria-label="PartyKit home">
+          <img src="/assets/partykit/icon-192.png" alt="" width="192" height="192" />
+          <span class="wordmark">Party<b>Kit</b></span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#games">Games</a>
+          <a href="#inside">Inside</a>
+          <a href="#screens">Screens</a>
+          <a href="/partykit/support/">Support</a>
+        </nav>
+        <a class="head-cta" href="#download">Get the app</a>
+      </div>
     </header>
 
-    <main>
-      <section class="party-hero">
-        <div class="party-hero__copy">
-          <p class="eyebrow eyebrow--purple">Local party games</p>
-          <h1>Pass the phone. Start the room.</h1>
-          <p>
-            PartyKit is made for groups already together: quick rounds, hidden
-            prompts, secret roles, drawing chaos and no account wall before the
-            first laugh.
-          </p>
-          <div class="party-tags">
-            <span>Offline</span>
-            <span>English & Spanish</span>
-            <span>No account required</span>
+    <main id="main">
+      <!-- ================================ Hero ================================ -->
+      <section class="hero" aria-label="Introduction">
+        <div class="hero__confetti" aria-hidden="true"></div>
+
+        <div class="shell hero__grid">
+          <div class="hero__copy reveal">
+            <p class="kicker">Pass-and-play party games</p>
+            <h1>Pass the phone. <em>Start the party.</em></h1>
+            <p class="hero__lead">
+              PartyKit turns one phone into game night: thirteen party games
+              with secret roles, drawing chaos, impossible dilemmas and
+              rapid-fire trivia. Fully offline, in English and Spanish, with no
+              accounts and no setup.
+            </p>
+
+            <div class="stores" aria-label="Download PartyKit">
+              <a
+                class="badge"
+                href="https://apps.apple.com/app/id6769780008"
+                aria-label="Download PartyKit on the App Store"
+              >
+                <svg viewBox="0 0 384 512" aria-hidden="true" fill="currentColor">
+                  <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
+                </svg>
+                <span><small>Download on the</small><strong>App Store</strong></span>
+              </a>
+              <a
+                class="badge"
+                href="https://play.google.com/store/apps/details?id=dev.caloto.partykit"
+                aria-label="Get PartyKit on Google Play"
+              >
+                <svg viewBox="0 0 512 512" aria-hidden="true" fill="currentColor">
+                  <path d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" />
+                </svg>
+                <span><small>Get it on</small><strong>Google Play</strong></span>
+              </a>
+            </div>
+
+            <p class="trust">
+              <span>13 games</span>
+              <span>100% offline</span>
+              <span>EN · ES</span>
+            </p>
           </div>
-          <div class="actions">
-            <a class="button button--purple" href="/partykit/support/">
-              Contact support
-            </a>
-            <a class="button button--ghost-party" href="/partykit/privacy/">
-              Privacy policy
-            </a>
-            <a class="button button--ghost-party" href="/partykit/terms/">
-              Terms of use
-            </a>
+
+          <div class="hero__visual reveal" data-d="1" aria-label="PartyKit app screens">
+            <div class="shots">
+              <div class="shot shot--side">
+                <img
+                  src="/assets/partykit/app/impostor.jpg"
+                  alt="Impostor reveal screen: you are the impostor — don't show anyone"
+                  width="640"
+                  height="1001"
+                />
+              </div>
+              <div class="shot shot--main">
+                <img
+                  src="/assets/partykit/app/home.jpg"
+                  alt="PartyKit home screen with the games grid: Impostor, Draw and Guess, Most Likely To and more"
+                  width="640"
+                  height="1031"
+                  fetchpriority="high"
+                />
+              </div>
+              <div class="shot shot--side">
+                <img
+                  src="/assets/partykit/app/draw.jpg"
+                  alt="Draw and Guess in play: 49-second timer while Michael draws"
+                  width="640"
+                  height="1032"
+                />
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="party-phone-stack" aria-label="PartyKit app screenshots">
-          <img class="shot shot--main" src="/assets/partykit/overview.png" alt="PartyKit games list" />
-          <img class="shot shot--side" src="/assets/partykit/impostor.png" alt="PartyKit secret role" />
-          <img class="shot shot--third" src="/assets/partykit/draw.png" alt="PartyKit draw and guess" />
         </div>
       </section>
 
-      <section class="party-section party-section--intro">
-        <div class="party-editorial">
-          <p class="eyebrow eyebrow--purple">Designed for the room</p>
-          <h2>Fast enough for a party. Simple enough for everyone.</h2>
-          <p>
-            The phone becomes the host: choose a mode, pass it around, reveal
-            only what each player needs and keep the group moving.
-          </p>
+      <!-- ============================ Stats strip ============================ -->
+      <section class="strip" aria-label="PartyKit in numbers">
+        <div class="shell strip__grid">
+          <div class="strip__item reveal">
+            <strong>13</strong>
+            <span>Games in one app</span>
+          </div>
+          <div class="strip__item reveal" data-d="1">
+            <strong>2</strong>
+            <span>Languages — EN&nbsp;·&nbsp;ES</span>
+          </div>
+          <div class="strip__item reveal" data-d="2">
+            <strong>0</strong>
+            <span>Accounts, ever</span>
+          </div>
+          <div class="strip__item reveal" data-d="3">
+            <strong>100%</strong>
+            <span>Offline — no internet</span>
+          </div>
         </div>
       </section>
 
-      <section class="party-section">
-        <div class="section-title">
-          <p class="eyebrow eyebrow--purple">Game modes</p>
-          <h2>Built for quick local rounds.</h2>
+      <!-- ============================== Lineup =============================== -->
+      <section class="lineup" id="games">
+        <div class="shell">
+          <div class="lineup__head reveal">
+            <p class="kicker">The lineup</p>
+            <h2>Thirteen games. <em>One phone.</em></h2>
+            <p>
+              Every game is pass-and-play: choose a mode, hand the phone around,
+              and the app reveals to each player only what they should see.
+            </p>
+          </div>
+
+          <div class="games">
+            <article class="game reveal">
+              <span class="game__emoji" aria-hidden="true">🕵️</span>
+              <h3>Impostor</h3>
+              <p>One player gets a different word. Discuss, vote, unmask.</p>
+            </article>
+            <article class="game reveal">
+              <span class="game__emoji" aria-hidden="true">🎨</span>
+              <h3>Draw &amp; Guess</h3>
+              <p>Teams race to draw and guess before the timer runs out.</p>
+            </article>
+            <article class="game reveal">
+              <span class="game__emoji" aria-hidden="true">🏆</span>
+              <h3>Most Likely To</h3>
+              <p>Read a prompt, nominate who fits best. MVP ceremony at the end.</p>
+            </article>
+            <article class="game reveal">
+              <span class="game__emoji" aria-hidden="true">🔥</span>
+              <h3>Truth or Dare</h3>
+              <p>The classic, with curated prompts in multiple tones.</p>
+            </article>
+            <article class="game reveal">
+              <span class="game__emoji" aria-hidden="true">🙅</span>
+              <h3>Never Have I Ever</h3>
+              <p>Reveal past experiences — with a lives system.</p>
+            </article>
+            <article class="game reveal">
+              <span class="game__emoji" aria-hidden="true">🤔</span>
+              <h3>Would You Rather</h3>
+              <p>Moral dilemmas. Vote privately, reveal together.</p>
+            </article>
+            <article class="game reveal">
+              <span class="game__emoji" aria-hidden="true">🧠</span>
+              <h3>Trivia</h3>
+              <p>Collect topic tiles in lives-based, quiz-wheel progression.</p>
+            </article>
+            <article class="game reveal">
+              <span class="game__emoji" aria-hidden="true">🤐</span>
+              <h3>Forbidden Word</h3>
+              <p>Describe the word without saying the forbidden hints.</p>
+            </article>
+            <article class="game reveal">
+              <span class="game__emoji" aria-hidden="true">🎙️</span>
+              <h3>Hot Seat</h3>
+              <p>Rapid-fire questions while the group controls the timer.</p>
+            </article>
+            <article class="game reveal">
+              <span class="game__emoji" aria-hidden="true">💣</span>
+              <h3>Pass the Bomb</h3>
+              <p>Fit the topic and pass the phone before it explodes.</p>
+            </article>
+            <article class="game reveal">
+              <span class="game__emoji" aria-hidden="true">🤥</span>
+              <h3>Two Truths &amp; a Lie</h3>
+              <p>Type two truths and one lie; the group debates and guesses.</p>
+            </article>
+            <article class="game reveal">
+              <span class="game__emoji" aria-hidden="true">💕</span>
+              <h3>Couples</h3>
+              <p>A two-player date-night deck — sweet, deep or spicy.</p>
+            </article>
+            <article class="game reveal">
+              <span class="game__emoji" aria-hidden="true">🗣️</span>
+              <h3>Who Said It?</h3>
+              <p>Everyone answers the same silly prompt; vote the funniest.</p>
+            </article>
+
+            <article class="game game--night reveal">
+              <span class="game__emoji" aria-hidden="true">🎉</span>
+              <div>
+                <h3><b>Party Night</b> — chain them all</h3>
+                <p>
+                  Build a shuffled lineup for your crew and play game after game
+                  with a single "Next game" tap. One session, no dead ends, no
+                  re-typing names.
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
-        <div class="feature-grid">
-          <article class="feature-card feature-card--party">
-            <h3>The Impostor</h3>
-            <p>Hide your secret role, pass the phone and act innocent.</p>
-          </article>
-          <article class="feature-card feature-card--party">
-            <h3>Draw & Guess</h3>
-            <p>Teams, timer and instant turns for fast group play.</p>
-          </article>
-          <article class="feature-card feature-card--party">
-            <h3>Truth, dares and more</h3>
-            <p>Multiple party formats in one app, ready without sign-up.</p>
-          </article>
+      </section>
+
+      <!-- ============================== Features ============================== -->
+      <section class="features" id="inside">
+        <div class="shell features__grid">
+          <div class="features__intro reveal">
+            <p class="kicker">Built for the room</p>
+            <h2>The phone becomes <em>the host.</em></h2>
+            <p>
+              No boards, no cards, no downloads for your friends. One phone runs
+              the whole night — and everyone plays.
+            </p>
+          </div>
+
+          <div class="features__list">
+            <article class="feature reveal">
+              <span class="feature__num" aria-hidden="true">01</span>
+              <div>
+                <h3>Fair play, guaranteed</h3>
+                <p>
+                  Every secret sits behind a <b>pass screen</b> with
+                  hold-to-reveal cards — the phone-holder can't peek at roles,
+                  answers or votes before they should.
+                </p>
+              </div>
+            </article>
+            <article class="feature reveal" data-d="1">
+              <span class="feature__num" aria-hidden="true">02</span>
+              <div>
+                <h3>Zero-friction rounds</h3>
+                <p>
+                  Every game explains itself the first time you open it, saved
+                  players rejoin in one tap, and <b>Rematch</b> re-runs the same
+                  setup instantly with fresh content.
+                </p>
+              </div>
+            </article>
+            <article class="feature reveal" data-d="2">
+              <span class="feature__num" aria-hidden="true">03</span>
+              <div>
+                <h3>A Hall of Fame that remembers</h3>
+                <p>
+                  Wins, records and <b>12 unlockable achievements</b> persist
+                  across sessions — plus shareable winner cards for the group
+                  chat.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================== Screens =============================== -->
+      <section class="screens" id="screens">
+        <div class="shell">
+          <div class="screens__head reveal">
+            <div>
+              <p class="kicker">Inside the app</p>
+              <h2>Made to be passed around.</h2>
+            </div>
+            <p class="screens__hint">Swipe &rarr;</p>
+          </div>
+
+          <div
+            class="gallery"
+            role="region"
+            aria-label="App screenshots"
+            tabindex="0"
+          >
+            <figure class="reveal">
+              <div class="shot">
+                <img
+                  src="/assets/partykit/app/trivia.jpg"
+                  alt="Trivia in play: which war ended with the Treaty of Versailles, with answer options"
+                  width="640"
+                  height="1097"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>Rapid-fire trivia</figcaption>
+            </figure>
+            <figure class="reveal" data-d="1">
+              <div class="shot">
+                <img
+                  src="/assets/partykit/app/vote.jpg"
+                  alt="Would You Rather vote screen with players choosing between options A and B"
+                  width="640"
+                  height="1031"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>Vote &amp; reveal together</figcaption>
+            </figure>
+            <figure class="reveal" data-d="2">
+              <div class="shot">
+                <img
+                  src="/assets/partykit/app/howto.jpg"
+                  alt="How to Play sheet for Draw and Guess with setup, drawing, guessing and winning steps"
+                  width="640"
+                  height="1101"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>Every game explains itself</figcaption>
+            </figure>
+            <figure class="reveal" data-d="3">
+              <div class="shot">
+                <img
+                  src="/assets/partykit/app/players.jpg"
+                  alt="Players screen with saved names ready to rejoin the next game"
+                  width="640"
+                  height="1055"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>Add friends once</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== Premium =============================== -->
+      <section class="premium" aria-label="PartyKit Premium">
+        <div class="shell premium__grid">
+          <div class="reveal">
+            <p class="kicker">Premium</p>
+            <h2>Free to play. <em>Premium for the deep cuts.</em></h2>
+            <p>
+              The core night is free. Premium unlocks every content category,
+              removes ads and opens custom rules when your group wants the game
+              its own way.
+            </p>
+          </div>
+          <ul class="premium__list reveal" data-d="1">
+            <li>All paid content categories unlocked</li>
+            <li>No ads between rounds</li>
+            <li>Custom win scores &amp; word counts</li>
+            <li>One purchase inside the app — that's it</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================================ CTA ================================ -->
+      <section class="cta" id="download">
+        <div class="shell reveal">
+          <img src="/assets/partykit/icon-192.png" alt="" width="192" height="192" loading="lazy" />
+          <h2>Be the friend who <em>brings the games.</em></h2>
+          <p>
+            Free to download on iPhone and Android. Works with the Wi-Fi off and
+            the music up.
+          </p>
+          <div class="stores" aria-label="Download PartyKit">
+            <a
+              class="badge"
+              href="https://apps.apple.com/app/id6769780008"
+              aria-label="Download PartyKit on the App Store"
+            >
+              <svg viewBox="0 0 384 512" aria-hidden="true" fill="currentColor">
+                <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
+              </svg>
+              <span><small>Download on the</small><strong>App Store</strong></span>
+            </a>
+            <a
+              class="badge"
+              href="https://play.google.com/store/apps/details?id=dev.caloto.partykit"
+              aria-label="Get PartyKit on Google Play"
+            >
+              <svg viewBox="0 0 512 512" aria-hidden="true" fill="currentColor">
+                <path d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" />
+              </svg>
+              <span><small>Get it on</small><strong>Google Play</strong></span>
+            </a>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer footer--party">
-      <span>PartyKit</span>
-      <a href="/">Caloto.dev</a>
-      <a href="/partykit/support/">Support</a>
-      <a href="/partykit/privacy/">Privacy Policy</a>
-      <a href="/partykit/terms/">Terms of Use</a>
-      <a href="mailto:contact@caloto.dev">contact@caloto.dev</a>
+    <footer class="site-foot">
+      <div class="shell site-foot__row">
+        <span class="wordmark">Party<b>Kit</b></span>
+        <nav aria-label="Footer">
+          <a href="/">Caloto.dev</a>
+          <a href="/partykit/support/">Support</a>
+          <a href="/partykit/terms/">Terms</a>
+          <a href="/partykit/privacy/">Privacy</a>
+          <a href="mailto:contact@caloto.dev">contact@caloto.dev</a>
+        </nav>
+        <p class="site-foot__legal">
+          © 2026 caloto.dev — PartyKit, party games for everyone. All rights
+          reserved.
+        </p>
+      </div>
     </footer>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "PartyKit: Party Games",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "iOS, Android",
+        "description": "13 pass-and-play party games in one app: Impostor, Draw & Guess, Trivia and more. Fully offline, English & Spanish, no accounts.",
+        "url": "https://caloto.dev/partykit/",
+        "image": "https://caloto.dev/assets/partykit/promo/og.jpg",
+        "downloadUrl": [
+          "https://apps.apple.com/app/id6769780008",
+          "https://play.google.com/store/apps/details?id=dev.caloto.partykit"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        }
+      }
+    </script>
+
+    <script>
+      (function () {
+        var els = document.querySelectorAll(".reveal");
+        var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (reduce || !("IntersectionObserver" in window)) {
+          els.forEach(function (el) { el.classList.add("in"); });
+          return;
+        }
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("in");
+                io.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+        );
+        els.forEach(function (el) { io.observe(el); });
+      })();
+    </script>
   </body>
 </html>
