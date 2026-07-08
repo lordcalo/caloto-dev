@@ -3,147 +3,514 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>document.documentElement.classList.add("js");</script>
+    <title>SpendFlex — Private Budget &amp; Expense Tracker</title>
     <meta
       name="description"
-      content="SpendFlex is a private, premium budget tracker for expenses, income, savings goals, recurring charges and reports without bank login."
+      content="SpendFlex is a private, offline-first expense tracker and budget planner for iOS and Android. Budgets, savings goals, insights and reports — no bank login, no account."
     />
-    <title>SpendFlex | Control your money. Your way.</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="canonical" href="https://caloto.dev/spendflex/" />
+    <meta name="theme-color" content="#021B17" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SpendFlex" />
+    <meta property="og:title" content="SpendFlex — Control your money. Your way." />
+    <meta
+      property="og:description"
+      content="A private, offline-first expense tracker and budget planner. Budgets, goals, insights and reports — no bank login, no account, and your data stays on your device."
+    />
+    <meta property="og:image" content="https://caloto.dev/assets/spendflex/promo/promotional1.jpg" />
+    <meta property="og:image:width" content="1672" />
+    <meta property="og:image:height" content="941" />
+    <meta
+      property="og:image:alt"
+      content="SpendFlex — manual money tracking, private by design. App screens on a deep green and gold background."
+    />
+    <meta property="og:url" content="https://caloto.dev/spendflex/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/assets/spendflex/icon-192.png" />
+    <link rel="apple-touch-icon" href="/assets/spendflex/icon-192.png" />
+    <link
+      rel="preload"
+      href="/assets/spendflex/fonts/playfair.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/spendflex/fonts/playfair-italic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/spendflex/landing.css" />
   </head>
-  <body class="theme-spendflex spendflex-minimal">
-    <header class="sfm-header">
-      <a class="sfm-brand" href="/spendflex/" aria-label="SpendFlex home">
-        <img src="/assets/spendflex/iconlogo.png" alt="" />
-        <span>SpendFlex</span>
-      </a>
-      <nav class="sfm-nav" aria-label="Primary navigation">
-        <a href="/">Caloto.dev</a>
-        <a href="#product">Product</a>
-        <a href="#private">Private</a>
-        <a href="/spendflex/support/">Support</a>
-        <a href="/spendflex/privacy/">Privacy</a>
-        <a href="/spendflex/terms/">Terms</a>
-      </nav>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-head">
+      <div class="shell site-head__row">
+        <a class="brand" href="/spendflex/" aria-label="SpendFlex home">
+          <img src="/assets/spendflex/icon-192.png" alt="" width="192" height="192" />
+          <span class="wordmark">Spend<b>Flex</b></span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#features">Features</a>
+          <a href="#screens">Screens</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#membership">Membership</a>
+          <a href="/spendflex/support/">Support</a>
+        </nav>
+        <a class="head-cta" href="#download">Get the app</a>
+      </div>
     </header>
 
-    <main>
-      <section class="sfm-hero">
-        <div class="sfm-hero__copy">
-          <img class="sfm-logo" src="/assets/spendflex/iconlogo.png" alt="" />
-          <p class="sfm-kicker">Private money control</p>
-          <h1>Control your money. Your way.</h1>
-          <p class="sfm-lead">
-            SpendFlex is a premium manual finance app for tracking expenses,
-            income, budgets and savings without connecting a bank account.
+    <main id="main">
+      <!-- ================================ Hero ================================ -->
+      <section class="hero" aria-label="Introduction">
+        <svg class="hero__rays" aria-hidden="true" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" fill="none">
+          <g stroke="currentColor" stroke-width="1">
+            <path d="M-60 960 L560 -80" opacity="0.10" />
+            <path d="M-140 960 L640 -160" opacity="0.06" />
+            <path d="M60 980 L700 -60" opacity="0.05" />
+            <path d="M1500 720 L820 -140" opacity="0.09" />
+            <path d="M1560 840 L900 -180" opacity="0.05" />
+          </g>
+        </svg>
+        <div class="hero__dots" aria-hidden="true"></div>
+
+        <div class="shell hero__grid">
+          <div class="hero__copy reveal">
+            <p class="kicker">Private by design</p>
+            <h1>Control your money. <em>Your way.</em></h1>
+            <p class="hero__lead">
+              SpendFlex is a private, offline-first expense tracker and budget
+              planner. Budgets, savings goals, insights and reports — while your
+              financial data never leaves your device.
+            </p>
+
+            <div class="stores" aria-label="Download SpendFlex">
+              <a
+                class="badge"
+                href="https://apps.apple.com/app/id6771418134"
+                aria-label="Download SpendFlex on the App Store"
+              >
+                <svg viewBox="0 0 384 512" aria-hidden="true" fill="currentColor">
+                  <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
+                </svg>
+                <span><small>Download on the</small><strong>App Store</strong></span>
+              </a>
+              <a
+                class="badge"
+                href="https://play.google.com/store/apps/details?id=dev.caloto.spendflex"
+                aria-label="Get SpendFlex on Google Play"
+              >
+                <svg viewBox="0 0 512 512" aria-hidden="true" fill="currentColor">
+                  <path d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" />
+                </svg>
+                <span><small>Get it on</small><strong>Google Play</strong></span>
+              </a>
+            </div>
+
+            <p class="trust">
+              <span>No bank login</span>
+              <span>Offline-first</span>
+              <span>EN · ES · PT</span>
+            </p>
+          </div>
+
+          <div class="hero__visual reveal" data-d="1" aria-label="SpendFlex app screens">
+            <div class="devices">
+              <img
+                class="device--side"
+                src="/assets/spendflex/screens/goals-device.jpg"
+                alt="Savings goals screen with progress toward a beach trip, investments and a completed vacation goal"
+                width="680"
+                height="1290"
+              />
+              <img
+                class="device--main"
+                src="/assets/spendflex/screens/home-device.jpg"
+                alt="SpendFlex home screen: June budget of $2,150 with 97% used, spending donut chart and category breakdown"
+                width="650"
+                height="1280"
+                fetchpriority="high"
+              />
+              <img
+                class="device--side"
+                src="/assets/spendflex/screens/stats-device.jpg"
+                alt="Stats screen with six-month spending trend line and a daily spending heatmap"
+                width="680"
+                height="1290"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ Ledger strip ============================ -->
+      <section class="ledger" aria-label="SpendFlex in numbers">
+        <div class="shell ledger__grid">
+          <div class="ledger__item reveal">
+            <strong>76</strong>
+            <span>Currencies, live rates</span>
+          </div>
+          <div class="ledger__item reveal" data-d="1">
+            <strong>3</strong>
+            <span>Languages — EN&nbsp;·&nbsp;ES&nbsp;·&nbsp;PT</span>
+          </div>
+          <div class="ledger__item reveal" data-d="2">
+            <strong>0</strong>
+            <span>Bank logins, ever</span>
+          </div>
+          <div class="ledger__item reveal" data-d="3">
+            <strong>100%</strong>
+            <span>On-device storage</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== Features ============================== -->
+      <section class="features" id="features">
+        <div class="shell features__grid">
+          <div class="features__intro reveal">
+            <p class="kicker">The practice</p>
+            <h2>Kept like a <em>private ledger.</em></h2>
+            <p>
+              SpendFlex borrows its manners from private banking: deliberate
+              entries, quiet numbers, and a monthly picture you can actually
+              read. No feeds, no noise, no dashboard shouting at you.
+            </p>
+          </div>
+
+          <div class="features__list">
+            <article class="feature reveal">
+              <span class="feature__num" aria-hidden="true">01</span>
+              <div>
+                <h3>Logged in seconds</h3>
+                <p>
+                  Expense or income, category, payment method — recorded
+                  <b>in seconds</b>, in any of 76 currencies, even offline.
+                  Recurring charges post themselves.
+                </p>
+              </div>
+            </article>
+            <article class="feature reveal" data-d="1">
+              <span class="feature__num" aria-hidden="true">02</span>
+              <div>
+                <h3>Budgets that flex</h3>
+                <p>
+                  A monthly allowance with <b>category limits</b>, optional
+                  rollover and custom month cycles — plus a daily figure that
+                  tells you what is safe to spend today.
+                </p>
+              </div>
+            </article>
+            <article class="feature reveal" data-d="2">
+              <span class="feature__num" aria-hidden="true">03</span>
+              <div>
+                <h3>Insight without exposure</h3>
+                <p>
+                  Trends, heatmaps, detected subscriptions, upcoming charges and
+                  savings goals — computed <b>on your device</b>, shared with no
+                  one. When you need the detail: PDF, CSV and Excel reports.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================== Screens =============================== -->
+      <section class="screens" id="screens">
+        <div class="shell">
+          <div class="screens__head reveal">
+            <div>
+              <p class="kicker">Inside the app</p>
+              <h2>Quiet interiors, serious numbers.</h2>
+            </div>
+            <p class="screens__hint">Swipe &rarr;</p>
+          </div>
+
+          <div
+            class="gallery"
+            role="region"
+            aria-label="App screenshots"
+            tabindex="0"
+          >
+            <figure class="reveal">
+              <img
+                src="/assets/spendflex/screens/add-device.jpg"
+                alt="Add expense screen with amount, category chips, date and receipt photo field"
+                width="680"
+                height="1290"
+                loading="lazy"
+              />
+              <figcaption>Entry, in seconds</figcaption>
+            </figure>
+            <figure class="reveal" data-d="1">
+              <img
+                src="/assets/spendflex/screens/transactions-device.jpg"
+                alt="Transactions screen with search, expense and income filters and daily totals"
+                width="680"
+                height="1290"
+                loading="lazy"
+              />
+              <figcaption>Every entry, searchable</figcaption>
+            </figure>
+            <figure class="reveal" data-d="2">
+              <img
+                src="/assets/spendflex/screens/budget-device.jpg"
+                alt="Budgets screen with monthly budget, category split, daily budget and alerts"
+                width="680"
+                height="1320"
+                loading="lazy"
+              />
+              <figcaption>Budgets &amp; daily allowance</figcaption>
+            </figure>
+            <figure class="reveal" data-d="3">
+              <img
+                src="/assets/spendflex/screens/fixed-device.jpg"
+                alt="Detected subscriptions screen listing Netflix and Spotify with track or ignore actions"
+                width="680"
+                height="1320"
+                loading="lazy"
+              />
+              <figcaption>Subscriptions, detected</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== Manifesto ============================== -->
+      <section class="manifesto" id="privacy">
+        <div class="shell manifesto__grid">
+          <div class="reveal">
+            <p class="kicker">Our position on privacy</p>
+            <h2>Your data, only yours. <em>On your device, and nowhere else.</em></h2>
+            <p class="manifesto__body">
+              There is no account to create, no bank to connect, and no
+              SpendFlex server holding your records — they live on your device,
+              offline-first. When you want a backup, it is a file you own,
+              saved to storage you choose: your Files app, your iCloud Drive,
+              your Google Drive.
+            </p>
+            <ul class="proofs">
+              <li>
+                <div>
+                  <strong>On-device storage</strong>
+                  <span>Offline-first records. No server holds your ledger.</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Face ID / Touch ID lock</strong>
+                  <span>The app opens for you, and only you.</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Private backup &amp; restore</strong>
+                  <span>Your history travels as your own file, nowhere else.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="manifesto__art reveal" data-d="1">
+            <figure>
+              <img
+                src="/assets/spendflex/screens/privacy-device.jpg"
+                alt="Settings screen showing export, backup, Face ID lock and the privacy note: your data, only yours"
+                width="680"
+                height="1290"
+                loading="lazy"
+              />
+              <figcaption>Settings — data &amp; privacy</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== Campaign ============================== -->
+      <section class="campaign" aria-label="SpendFlex campaign artwork">
+        <div class="shell">
+          <div class="campaign__head reveal">
+            <p class="kicker">The campaign</p>
+            <h2>One brand, from store to screen.</h2>
+          </div>
+          <div class="campaign__grid">
+            <figure class="artwork artwork--wide reveal">
+              <img
+                src="/assets/spendflex/promo/promotional3.jpg"
+                alt="Campaign banner: powerful insights, total privacy — budgets, subscriptions, backups and analytics on deep green"
+                width="1672"
+                height="941"
+                loading="lazy"
+              />
+              <figcaption>Powerful insights. Total privacy.</figcaption>
+            </figure>
+            <figure class="artwork reveal" data-d="1">
+              <img
+                src="/assets/spendflex/promo/promotional2.jpg"
+                alt="Campaign banner: track every expense in seconds — add expense flow on champagne background"
+                width="1672"
+                height="941"
+                loading="lazy"
+              />
+              <figcaption>Track every expense in seconds.</figcaption>
+            </figure>
+            <figure class="artwork reveal" data-d="2">
+              <img
+                src="/assets/spendflex/promo/promotional1.jpg"
+                alt="Campaign banner: manual money tracking, private by design — six app screens on deep green"
+                width="1672"
+                height="941"
+                loading="lazy"
+              />
+              <figcaption>Manual money tracking. Private by design.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= Membership ============================= -->
+      <section class="membership" id="membership">
+        <div class="shell">
+          <div class="membership__head reveal">
+            <p class="kicker">Membership</p>
+            <h2>Free to begin. <em>Premium</em> when you're ready.</h2>
+          </div>
+
+          <div class="plans">
+            <article class="plan reveal">
+              <p class="plan__tier">The ledger — free</p>
+              <p class="plan__price">€0 <small>forever</small></p>
+              <ul class="plan__list">
+                <li>50 entries a month</li>
+                <li>Monthly budget &amp; daily allowance</li>
+                <li>Categories, charts &amp; month navigation</li>
+                <li>Savings goals &amp; recurring charges</li>
+                <li>Light &amp; dark themes, EN · ES · PT</li>
+              </ul>
+            </article>
+
+            <article class="plan plan--premium reveal" data-d="1">
+              <p class="plan__tier">Premium — everything unlocked</p>
+              <p class="plan__price">€2.99 <small>per month</small></p>
+              <p class="plan__alt">or €25 once — yours for life</p>
+              <ul class="plan__list">
+                <li>Unlimited entries</li>
+                <li>Custom categories &amp; income sources</li>
+                <li>Receipt photos on any transaction</li>
+                <li>Smart insights, trends &amp; subscription detection</li>
+                <li>PDF, CSV &amp; Excel reports</li>
+                <li>Private backup &amp; restore</li>
+              </ul>
+            </article>
+          </div>
+          <p class="plans__note">
+            Prices in euros. Final pricing is shown in the app and may vary by
+            region.
           </p>
-          <div class="sfm-actions">
-            <a class="sfm-button sfm-button--primary" href="/spendflex/support/">Support</a>
-            <a class="sfm-button" href="/spendflex/privacy/">Privacy</a>
-          </div>
-        </div>
-
-        <div class="sfm-phone-stage" aria-label="SpendFlex app preview">
-          <figure class="sfm-phone sfm-phone--rear">
-            <img
-              src="/assets/spendflex/screens/budget-device.jpg"
-              alt="SpendFlex budget controls"
-              width="680"
-              height="1320"
-            />
-          </figure>
-          <figure class="sfm-phone sfm-phone--front">
-            <img
-              src="/assets/spendflex/screens/home-device.jpg"
-              alt="SpendFlex monthly dashboard"
-              width="650"
-              height="1280"
-              fetchpriority="high"
-            />
-          </figure>
-          <figure class="sfm-phone sfm-phone--back">
-            <img
-              src="/assets/spendflex/screens/stats-device.jpg"
-              alt="SpendFlex stats and trend chart"
-              width="680"
-              height="1290"
-            />
-          </figure>
         </div>
       </section>
 
-      <section class="sfm-proof" aria-label="SpendFlex principles">
-        <span>No bank login</span>
-        <span>No account required</span>
-        <span>Local-first records</span>
-        <span>PDF, CSV and Excel</span>
-      </section>
-
-      <section class="sfm-intro" id="product">
-        <div>
-          <p class="sfm-kicker">Built for daily discipline</p>
-          <h2>A calmer way to see the month.</h2>
-        </div>
-        <p>
-          SpendFlex keeps the ritual simple: add what happened, see what is
-          left, understand which categories are moving and stay ahead of fixed
-          costs before they distort the month.
-        </p>
-      </section>
-
-      <section class="sfm-product">
-        <article>
-          <img src="/assets/spendflex/screens/add-device.jpg" alt="SpendFlex add expense screen" width="680" height="1290" loading="lazy" />
-          <div>
-            <span>Capture</span>
-            <h3>Log fast, stay aware.</h3>
-            <p>Expenses, income, categories, currency and receipt photos in a focused flow.</p>
-          </div>
-        </article>
-        <article>
-          <img src="/assets/spendflex/screens/budget-device.jpg" alt="SpendFlex budget screen" width="680" height="1320" loading="lazy" />
-          <div>
-            <span>Budget</span>
-            <h3>Make the month behave.</h3>
-            <p>Monthly limits, category budgets, custom cycles, daily allowance and alerts.</p>
-          </div>
-        </article>
-        <article>
-          <img src="/assets/spendflex/screens/fixed-device.jpg" alt="SpendFlex recurring costs screen" width="760" height="1320" loading="lazy" />
-          <div>
-            <span>Forecast</span>
-            <h3>Know what is coming.</h3>
-            <p>Recurring costs, subscription detection, trends, goals and clean reports.</p>
-          </div>
-        </article>
-      </section>
-
-      <section class="sfm-private" id="private">
-        <div class="sfm-private__screen">
-          <img src="/assets/spendflex/screens/privacy-device.jpg" alt="SpendFlex privacy and backup settings" width="680" height="1290" loading="lazy" />
-        </div>
-        <div class="sfm-private__copy">
-          <p class="sfm-kicker">Private by design</p>
-          <h2>Your data stays yours.</h2>
+      <!-- ================================ CTA ================================ -->
+      <section class="cta" id="download">
+        <div class="shell reveal">
+          <img src="/assets/spendflex/icon-192.png" alt="" width="192" height="192" loading="lazy" />
+          <h2>Begin your <em>private ledger.</em></h2>
           <p>
-            No bank credentials. No account required. Core financial records
-            stay on your device, with export and backup flows built around your
-            own files.
+            Seconds to your first entry. SpendFlex is free to download on
+            iPhone and Android.
           </p>
-          <div class="sfm-actions">
-            <a class="sfm-button sfm-button--primary" href="/spendflex/privacy/">Privacy Policy</a>
-            <a class="sfm-button" href="/spendflex/terms/">Terms of Use</a>
+          <div class="stores" aria-label="Download SpendFlex">
+            <a
+              class="badge"
+              href="https://apps.apple.com/app/id6771418134"
+              aria-label="Download SpendFlex on the App Store"
+            >
+              <svg viewBox="0 0 384 512" aria-hidden="true" fill="currentColor">
+                <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
+              </svg>
+              <span><small>Download on the</small><strong>App Store</strong></span>
+            </a>
+            <a
+              class="badge"
+              href="https://play.google.com/store/apps/details?id=dev.caloto.spendflex"
+              aria-label="Get SpendFlex on Google Play"
+            >
+              <svg viewBox="0 0 512 512" aria-hidden="true" fill="currentColor">
+                <path d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" />
+              </svg>
+              <span><small>Get it on</small><strong>Google Play</strong></span>
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="sfm-footer">
-      <span>SpendFlex</span>
-      <a href="/">Caloto.dev</a>
-      <a href="/spendflex/support/">Support</a>
-      <a href="/spendflex/terms/">Terms</a>
-      <a href="/spendflex/privacy/">Privacy</a>
-      <a href="mailto:contact@caloto.dev">contact@caloto.dev</a>
+    <footer class="site-foot">
+      <div class="shell site-foot__row">
+        <span class="wordmark">Spend<b>Flex</b></span>
+        <nav aria-label="Footer">
+          <a href="/">Caloto.dev</a>
+          <a href="/spendflex/support/">Support</a>
+          <a href="/spendflex/terms/">Terms</a>
+          <a href="/spendflex/privacy/">Privacy</a>
+          <a href="mailto:contact@caloto.dev">contact@caloto.dev</a>
+        </nav>
+        <p class="site-foot__legal">
+          © 2026 caloto.dev — SpendFlex, a private money app. All rights
+          reserved.
+        </p>
+      </div>
     </footer>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "SpendFlex",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "iOS, Android",
+        "description": "Private, offline-first expense tracker and budget planner. Budgets, savings goals, insights and reports without bank login.",
+        "url": "https://caloto.dev/spendflex/",
+        "image": "https://caloto.dev/assets/spendflex/promo/promotional1.jpg",
+        "downloadUrl": [
+          "https://apps.apple.com/app/id6771418134",
+          "https://play.google.com/store/apps/details?id=dev.caloto.spendflex"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        }
+      }
+    </script>
+
+    <script>
+      (function () {
+        var els = document.querySelectorAll(".reveal");
+        var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (reduce || !("IntersectionObserver" in window)) {
+          els.forEach(function (el) { el.classList.add("in"); });
+          return;
+        }
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("in");
+                io.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+        );
+        els.forEach(function (el) { io.observe(el); });
+      })();
+    </script>
   </body>
 </html>
