@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpendFlex — Press Kit</title>
+    <meta
+      name="description"
+      content="SpendFlex press kit with screenshots, app facts, download links and reviewer contact details."
+    />
+    <link rel="canonical" href="https://caloto.dev/spendflex/presskit/" />
+    <meta name="theme-color" content="#0B211C" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SpendFlex" />
+    <meta property="og:title" content="SpendFlex — Press Kit" />
+    <meta
+      property="og:description"
+      content="SpendFlex press kit with screenshots, app facts, download links and reviewer contact details."
+    />
+    <meta property="og:url" content="https://caloto.dev/spendflex/presskit/" />
+    <meta property="og:image" content="https://caloto.dev/assets/spendflex/presskit/screenshots/1.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SpendFlex — Press Kit" />
+    <meta
+      name="twitter:description"
+      content="SpendFlex press kit with screenshots, app facts, download links and reviewer contact details."
+    />
+    <link rel="icon" href="/assets/spendflex/icon-192.png" />
+    <link rel="apple-touch-icon" href="/assets/spendflex/icon-192.png" />
+    <style>
+      :root {
+        --bg: #0b211c;
+        --surface: #123029;
+        --border: #24463d;
+        --text: #f1ede2;
+        --muted: rgba(241, 237, 226, 0.72);
+        --gold: #d6b36a;
+        --teal: #4f9e8e;
+        --max: 56.25rem;
+        --serif: Georgia, "Times New Roman", serif;
+        --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: var(--sans);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+      a { color: inherit; text-decoration: none; }
+      :focus-visible {
+        outline: 2px solid var(--gold);
+        outline-offset: 3px;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: -9999px;
+        top: 1rem;
+        z-index: 10;
+        padding: 0.8rem 1rem;
+        border-radius: 999px;
+        background: var(--gold);
+        color: #0b211c;
+        font-weight: 700;
+      }
+      .skip-link:focus { left: 1rem; }
+
+      .wrap {
+        width: min(var(--max), calc(100vw - 2rem));
+        margin: 0 auto;
+      }
+
+      .page {
+        padding: 1.2rem 0 4rem;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.8rem;
+        min-width: 0;
+      }
+      .brand img {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 0.7rem;
+        border: 1px solid var(--border);
+        background: #081813;
+      }
+      .brand__text {
+        font-family: var(--serif);
+        font-size: 1.1rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      .button,
+      .chip,
+      .tag,
+      .fact,
+      .review {
+        border: 1px solid var(--border);
+        background: rgba(18, 48, 41, 0.92);
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        min-height: 3rem;
+        padding: 0.78rem 1rem;
+        border-radius: 999px;
+        font-size: 0.95rem;
+        font-weight: 700;
+        white-space: nowrap;
+        transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+      }
+      .button:hover { transform: translateY(-1px); border-color: rgba(214, 179, 106, 0.5); }
+      .button--gold {
+        background: var(--gold);
+        color: #0b211c;
+        border-color: var(--gold);
+      }
+      .button--ghost { color: var(--text); }
+
+      .hero {
+        padding: 2.2rem 0 1.5rem;
+      }
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: var(--gold);
+        font-size: 0.68rem;
+        font-weight: 800;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+        margin: 0 0 1rem;
+      }
+      .eyebrow::before {
+        content: "";
+        width: 2rem;
+        height: 1px;
+        background: currentColor;
+      }
+      h1, h2, h3 {
+        margin: 0;
+        font-family: var(--serif);
+        font-weight: 700;
+        line-height: 1.08;
+        letter-spacing: 0.01em;
+      }
+      h1 {
+        font-size: clamp(2.3rem, 5vw, 4.6rem);
+        max-width: 11ch;
+      }
+      h2 {
+        font-size: clamp(1.6rem, 3vw, 2.4rem);
+        max-width: 18ch;
+      }
+      h3 {
+        font-size: 1.15rem;
+      }
+      p { margin: 0; }
+
+      .hero__grid {
+        display: grid;
+        gap: 1.2rem;
+      }
+      .hero__copy {
+        padding: 0.4rem 0;
+      }
+      .lede {
+        max-width: 52rem;
+        margin-top: 1rem;
+        font-size: clamp(1.05rem, 1.5vw, 1.22rem);
+        color: var(--muted);
+      }
+      .one-liner {
+        margin-top: 1rem;
+        padding: 1rem 1.05rem;
+        border: 1px solid var(--border);
+        border-radius: 1rem;
+        background: rgba(18, 48, 41, 0.66);
+        color: var(--text);
+      }
+      .one-liner strong {
+        display: block;
+        font-family: var(--serif);
+        color: var(--gold);
+        margin-bottom: 0.35rem;
+        font-size: 0.76rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-top: 1.25rem;
+      }
+      .meta-chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        margin-top: 1.2rem;
+      }
+      .chip {
+        padding: 0.55rem 0.8rem;
+        border-radius: 999px;
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+
+      .section {
+        padding: 1.4rem 0;
+      }
+      .section__head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+      .section__eyebrow {
+        margin: 0 0 0.65rem;
+        color: var(--teal);
+        font-size: 0.68rem;
+        font-weight: 800;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+      }
+      .section__note {
+        max-width: 25rem;
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      .hooks,
+      .features,
+      .facts {
+        display: grid;
+        gap: 1rem;
+      }
+      .card {
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 1px solid var(--border);
+        background: var(--surface);
+      }
+      .card p,
+      .feature p,
+      .fact p,
+      .review p {
+        color: var(--muted);
+      }
+      .hooks h3 { margin-bottom: 0.5rem; }
+      .features .card {
+        display: grid;
+        gap: 0.45rem;
+      }
+      .features-list {
+        display: grid;
+        gap: 0.75rem;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .features-list li {
+        display: flex;
+        gap: 0.8rem;
+        padding: 0.9rem 1rem;
+        border-radius: 0.9rem;
+        border: 1px solid var(--border);
+        background: rgba(18, 48, 41, 0.72);
+      }
+      .features-list strong {
+        color: var(--gold);
+        font-size: 0.72rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        min-width: 3.1rem;
+        padding-top: 0.18rem;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.75rem;
+      }
+      figure {
+        margin: 0;
+        padding: 0.45rem;
+        border-radius: 1rem;
+        border: 1px solid var(--border);
+        background: rgba(18, 48, 41, 0.8);
+      }
+      figure img {
+        width: 100%;
+        aspect-ratio: 10 / 21;
+        object-fit: cover;
+        border-radius: 0.7rem;
+        background: #081813;
+      }
+      figcaption {
+        padding: 0.6rem 0.35rem 0.2rem;
+        font-size: 0.72rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .facts {
+        grid-template-columns: 1fr;
+      }
+      .fact {
+        padding: 0.95rem 1rem;
+        border-radius: 1rem;
+      }
+      .fact span {
+        display: block;
+        margin-bottom: 0.3rem;
+        color: var(--gold);
+        font-size: 0.72rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+      }
+      .fact p {
+        color: var(--text);
+      }
+
+      .review {
+        padding: 1rem;
+        border-radius: 1rem;
+      }
+      blockquote {
+        margin: 0;
+        font-size: 1rem;
+      }
+      .review cite {
+        display: block;
+        margin-top: 0.8rem;
+        font-style: normal;
+        color: var(--gold);
+        font-size: 0.72rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+      }
+
+      .contact {
+        display: grid;
+        gap: 0.9rem;
+      }
+      .contact__email {
+        color: var(--gold);
+        font-weight: 700;
+      }
+      .footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem 1rem;
+        justify-content: space-between;
+        padding-top: 2rem;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+      .footer a { color: var(--text); }
+
+      @media (min-width: 720px) {
+        .hero__grid {
+          grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.95fr);
+          align-items: start;
+        }
+        .hooks {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .features {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .facts {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .gallery {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 719px) {
+        .topbar,
+        .section__head,
+        .footer {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .actions .button {
+          width: 100%;
+        }
+        .gallery {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <main id="main" class="page">
+      <div class="wrap">
+        <header class="topbar" aria-label="Press kit header">
+          <a class="brand" href="/spendflex/" aria-label="SpendFlex home">
+            <img src="/assets/spendflex/iconlogo.png" alt="" width="192" height="192" />
+            <span class="brand__text">SpendFlex</span>
+          </a>
+          <a class="button button--ghost" href="/assets/spendflex/presskit/SpendFlex-press-assets.zip" download>
+            Download all assets
+          </a>
+        </header>
+
+        <section class="hero" aria-label="Introduction">
+          <div class="hero__grid">
+            <div class="hero__copy">
+              <p class="eyebrow">Press kit</p>
+              <h1>SpendFlex — Budget &amp; Expenses</h1>
+              <p class="lede">
+                A private finance app for iOS and Android built to help people
+                track spending with flexible budget cycles and everything stored
+                on device.
+              </p>
+              <div class="one-liner" aria-label="One-liner">
+                <strong>One-liner</strong>
+                <div>
+                  <div><b>EN:</b> A private, offline-first budget tracker with flexible weekly, biweekly or monthly cycles.</div>
+                  <div><b>ES:</b> Un control de gastos privado y sin conexión, con ciclos de presupuesto semanal, quincenal o mensual.</div>
+                  <div><b>PT:</b> Um controle de gastos privado e offline, com ciclos de orçamento semanal, quinzenal ou mensal.</div>
+                </div>
+              </div>
+              <div class="actions" aria-label="Store links">
+                <a class="button button--gold" href="https://apps.apple.com/app/spendflex-budget-expenses/id6771418134">App Store</a>
+                <a class="button button--ghost" href="https://play.google.com/store/apps/details?id=dev.caloto.spendflex">Google Play</a>
+                <a class="button button--ghost" href="/assets/spendflex/presskit/SpendFlex-press-assets.zip" download>Download all assets</a>
+              </div>
+              <div class="meta-chips" aria-label="Quick facts">
+                <span class="chip">EN / ES / PT</span>
+                <span class="chip">iOS + Android</span>
+                <span class="chip">Free + Premium</span>
+                <span class="chip">100% on device</span>
+              </div>
+            </div>
+
+            <aside class="card" aria-label="App snapshot">
+              <p class="section__eyebrow">At a glance</p>
+              <h3>SpendFlex</h3>
+              <div class="facts" style="margin-top: 0.9rem">
+                <div class="fact">
+                  <span>Name</span>
+                  <p>SpendFlex — SpendFlex: Budget &amp; Expenses</p>
+                </div>
+                <div class="fact">
+                  <span>Dev</span>
+                  <p>Alfredo Caloto (independiente)</p>
+                </div>
+                <div class="fact">
+                  <span>Category</span>
+                  <p>Finanzas</p>
+                </div>
+                <div class="fact">
+                  <span>Privacy</span>
+                  <p>100% en el dispositivo, sin cuenta, sin nube, sin anuncios ni rastreadores, sin sincronizar el banco.</p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="hooks-title">
+          <div class="section__head">
+            <div>
+              <p class="section__eyebrow">Why it stands out</p>
+              <h2 id="hooks-title">Two hooks that explain the product fast.</h2>
+            </div>
+            <p class="section__note">Built for journalists, blog posts and short review workflows.</p>
+          </div>
+          <div class="hooks">
+            <article class="card">
+              <h3>Flexible budget cycles</h3>
+              <p>Weekly, every 2 weeks or monthly (calendar or fixed pay-day); budget, category limits, rollover and daily allowance follow the cycle you pick.</p>
+            </article>
+            <article class="card">
+              <h3>Truly private &amp; offline</h3>
+              <p>Everything on-device, no account/cloud/ads/trackers.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="features-title">
+          <div class="section__head">
+            <div>
+              <p class="section__eyebrow">Features</p>
+              <h2 id="features-title">The core feature set.</h2>
+            </div>
+          </div>
+          <div class="features">
+            <article class="card">
+              <ul class="features-list">
+                <li><strong>01</strong><span>ciclos flexibles con rollover</span></li>
+                <li><strong>02</strong><span>reembolsos (netean categoría/presupuesto/gráficas)</span></li>
+                <li><strong>03</strong><span>CSV Import 2.0 (mapeo, perfiles de banco, preview editable, duplicados)</span></li>
+                <li><strong>04</strong><span>reglas de comercio</span></li>
+              </ul>
+            </article>
+            <article class="card">
+              <ul class="features-list">
+                <li><strong>05</strong><span>varias cuentas con su moneda</span></li>
+                <li><strong>06</strong><span>multidivisa, metas, recurrentes, límites por categoría, presupuesto diario</span></li>
+                <li><strong>07</strong><span>insights/stats, export CSV/PDF</span></li>
+                <li><strong>08</strong><span>accesibilidad completa</span></li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="gallery-title">
+          <div class="section__head">
+            <div>
+              <p class="section__eyebrow">Gallery</p>
+              <h2 id="gallery-title">8 screenshots, optimized for quick preview and download.</h2>
+            </div>
+            <p class="section__note">WebP assets live under /assets/spendflex/presskit/screenshots/.</p>
+          </div>
+          <div class="gallery" role="list" aria-label="SpendFlex screenshots">
+            <figure role="listitem"><img src="/assets/spendflex/presskit/screenshots/1.webp" alt="SpendFlex screenshot 1" width="1000" height="2165" loading="lazy" decoding="async" /><figcaption>Screenshot 01</figcaption></figure>
+            <figure role="listitem"><img src="/assets/spendflex/presskit/screenshots/2.webp" alt="SpendFlex screenshot 2" width="1000" height="2165" loading="lazy" decoding="async" /><figcaption>Screenshot 02</figcaption></figure>
+            <figure role="listitem"><img src="/assets/spendflex/presskit/screenshots/3.webp" alt="SpendFlex screenshot 3" width="1000" height="2165" loading="lazy" decoding="async" /><figcaption>Screenshot 03</figcaption></figure>
+            <figure role="listitem"><img src="/assets/spendflex/presskit/screenshots/4.webp" alt="SpendFlex screenshot 4" width="1000" height="2165" loading="lazy" decoding="async" /><figcaption>Screenshot 04</figcaption></figure>
+            <figure role="listitem"><img src="/assets/spendflex/presskit/screenshots/5.webp" alt="SpendFlex screenshot 5" width="1000" height="2165" loading="lazy" decoding="async" /><figcaption>Screenshot 05</figcaption></figure>
+            <figure role="listitem"><img src="/assets/spendflex/presskit/screenshots/6.webp" alt="SpendFlex screenshot 6" width="1000" height="2165" loading="lazy" decoding="async" /><figcaption>Screenshot 06</figcaption></figure>
+            <figure role="listitem"><img src="/assets/spendflex/presskit/screenshots/7.webp" alt="SpendFlex screenshot 7" width="1000" height="2165" loading="lazy" decoding="async" /><figcaption>Screenshot 07</figcaption></figure>
+            <figure role="listitem"><img src="/assets/spendflex/presskit/screenshots/8.webp" alt="SpendFlex screenshot 8" width="1000" height="2165" loading="lazy" decoding="async" /><figcaption>Screenshot 08</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="facts-title">
+          <div class="section__head">
+            <div>
+              <p class="section__eyebrow">Fact sheet</p>
+              <h2 id="facts-title">Everything in one glance.</h2>
+            </div>
+          </div>
+          <div class="facts">
+            <div class="fact"><span>Name</span><p>SpendFlex — SpendFlex: Budget &amp; Expenses</p></div>
+            <div class="fact"><span>Dev</span><p>Alfredo Caloto (independiente)</p></div>
+            <div class="fact"><span>Category</span><p>Finanzas</p></div>
+            <div class="fact"><span>Platforms</span><p>iOS + Android</p></div>
+            <div class="fact"><span>Languages</span><p>EN/ES/PT</p></div>
+            <div class="fact"><span>Price</span><p>Gratis (50 gastos/mes); Premium 2,99 €/mes o 25 € de por vida.</p></div>
+            <div class="fact"><span>Privacy</span><p>100% en el dispositivo, sin cuenta, sin nube, sin anuncios ni rastreadores, sin sincronizar el banco.</p></div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="reviewers-title">
+          <div class="section__head">
+            <div>
+              <p class="section__eyebrow">For reviewers</p>
+              <h2 id="reviewers-title">Free Premium codes and a direct line for questions.</h2>
+            </div>
+          </div>
+          <div class="review">
+            <blockquote>
+              "Happy to provide free Premium promo codes so you can try everything. Available for questions or a short interview — contact@caloto.dev."
+            </blockquote>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="contact-title">
+          <div class="section__head">
+            <div>
+              <p class="section__eyebrow">Contact</p>
+              <h2 id="contact-title">Reach out directly.</h2>
+            </div>
+          </div>
+          <div class="contact card">
+            <p>
+              App Store:
+              <a href="https://apps.apple.com/app/spendflex-budget-expenses/id6771418134">https://apps.apple.com/app/spendflex-budget-expenses/id6771418134</a>
+            </p>
+            <p>
+              Google Play:
+              <a href="https://play.google.com/store/apps/details?id=dev.caloto.spendflex">https://play.google.com/store/apps/details?id=dev.caloto.spendflex</a>
+            </p>
+            <p>
+              Contact:
+              <a class="contact__email" href="mailto:contact@caloto.dev">contact@caloto.dev</a>
+            </p>
+            <p>
+              Request a code:
+              <a class="button button--gold" href="mailto:contact@caloto.dev?subject=SpendFlex%20review%20code">Email for a review code</a>
+            </p>
+          </div>
+        </section>
+
+        <footer class="footer" aria-label="Footer">
+          <span>SpendFlex press kit</span>
+          <a href="/spendflex/">SpendFlex</a>
+          <a href="/assets/spendflex/presskit/SpendFlex-press-assets.zip" download>Download all assets</a>
+          <a href="mailto:contact@caloto.dev">contact@caloto.dev</a>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
