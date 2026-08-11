@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Privacy Policy for SpendFlex, including local storage, analytics, advertising, purchases and contact information."
+      content="Privacy Policy for SpendFlex, including local financial data, optional backups and exports, currency conversion, purchases and support."
     />
     <title>Privacy Policy | SpendFlex</title>
     <link rel="canonical" href="https://caloto.dev/spendflex/privacy/" />
@@ -14,12 +14,12 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="SpendFlex" />
     <meta property="og:title" content="Privacy Policy | SpendFlex" />
-    <meta property="og:description" content="Privacy Policy for SpendFlex, including local storage, analytics, advertising, purchases and contact information." />
+    <meta property="og:description" content="Privacy Policy for SpendFlex, including local financial data, optional backups and exports, currency conversion, purchases and support." />
     <meta property="og:url" content="https://caloto.dev/spendflex/privacy/" />
     <meta property="og:image" content="https://caloto.dev/assets/spendflex/promo/promotional1.jpg" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Privacy Policy | SpendFlex" />
-    <meta name="twitter:description" content="Privacy Policy for SpendFlex, including local storage, analytics, advertising, purchases and contact information." />
+    <meta name="twitter:description" content="Privacy Policy for SpendFlex, including local financial data, optional backups and exports, currency conversion, purchases and support." />
     <link rel="icon" href="/assets/spendflex/icon-192.png" />
     <link rel="apple-touch-icon" href="/assets/spendflex/icon-192.png" />
     <link rel="stylesheet" href="/styles.css" />
@@ -53,146 +53,148 @@
       <article class="legal-document legal-document--spendflex">
         <p class="eyebrow eyebrow--gold">Privacy Policy</p>
         <h1>Privacy Policy for SpendFlex</h1>
-        <p class="updated">Last updated: May 19, 2026</p>
+        <p class="updated">Last updated: August 11, 2026</p>
 
         <p>
-          SpendFlex is a personal finance app designed to help you manually
-          track expenses, budgets, categories and spending habits.
+          SpendFlex is an offline-first personal finance app designed to help
+          you manually track expenses, income, refunds, budgets and savings.
         </p>
         <p>
-          This Privacy Policy explains what information SpendFlex may collect,
-          how it is used, and what choices you have.
+          This Privacy Policy explains what information the app processes, when
+          information can leave your device, and what choices you have.
         </p>
 
-        <h2>1. Information stored locally on your device</h2>
-        <p>SpendFlex may store information locally on your device, such as:</p>
+        <h2>1. Financial data stored on your device</h2>
+        <p>SpendFlex stores its core data locally on your device, including:</p>
         <ul>
-          <li>Expenses you manually enter</li>
-          <li>Expense descriptions, amounts, categories and dates</li>
-          <li>Budget settings</li>
-          <li>Custom categories and category budgets</li>
-          <li>Recurring expense templates</li>
-          <li>Language and theme preferences</li>
-          <li>Other local app preferences</li>
+          <li>Expenses, income and refunds you enter or import</li>
+          <li>Descriptions, amounts, currencies, categories, dates and receipt photos</li>
+          <li>Budgets, category limits, accounts, payment methods and merchant rules</li>
+          <li>Recurring entries, savings goals and related history</li>
+          <li>Language, theme, privacy, notification and other app preferences</li>
         </ul>
         <p>
-          This information is used to provide the app's core functionality and
-          personalize your experience.
-        </p>
-        <p>
-          SpendFlex does not require an account and does not connect to your
-          bank. Your manually entered expense records are stored locally on your
-          device unless you choose to export them.
+          SpendFlex does not require a SpendFlex account, does not connect to
+          your bank, and does not upload this financial data to a developer-run
+          server. Face ID, Touch ID and device credential checks are performed
+          by your operating system; SpendFlex does not receive biometric data.
         </p>
 
-        <h2>2. Analytics</h2>
+        <h2>2. Exports and backups you choose</h2>
         <p>
-          SpendFlex may use PostHog to understand how people use the app and to
-          improve the experience.
+          You can export reports or create backups and choose where to save or
+          share those files. Depending on your device, this may include Files,
+          iCloud Drive, Google Drive, another storage provider, or another app
+          shown in the system share sheet.
         </p>
-        <p>Analytics data may include information such as:</p>
+        <p>
+          SpendFlex sends a file to that destination only after you select or
+          authorize it. Once saved or shared, the destination provider's terms
+          and privacy policy apply. SpendFlex does not copy those files to a
+          developer-run cloud service.
+        </p>
+
+        <h2>3. Currency conversion</h2>
+        <p>
+          If you request a foreign-currency conversion, SpendFlex contacts the
+          ExchangeRate-API open endpoint at <code>open.er-api.com</code>. The
+          request contains the base currency code. It does not contain your
+          expense amount, description, category or transaction history.
+        </p>
+        <p>
+          Like any internet request, the provider may receive standard network
+          information such as your IP address, device network metadata and the
+          request time. Exchange rates are cached locally so the app can reuse
+          the latest available data.
+        </p>
+
+        <h2>4. Purchases and Premium access</h2>
+        <p>
+          In-app purchases, subscriptions, introductory offers and optional
+          tips are processed by Apple App Store or Google Play. RevenueCat helps
+          SpendFlex verify purchases and determine whether Premium is active.
+        </p>
+        <p>
+          These services may process an app-generated purchase identifier,
+          device and operating-system information, product identifiers, store
+          receipts or purchase tokens, transaction status and entitlement data.
+          SpendFlex does not receive or store your payment card details.
+        </p>
+        <p>
+          Their own privacy policies apply:
+          <a href="https://www.revenuecat.com/privacy">RevenueCat</a>,
+          <a href="https://www.apple.com/legal/privacy/">Apple</a> and
+          <a href="https://policies.google.com/privacy">Google</a>.
+        </p>
+
+        <h2>5. Support and feedback</h2>
+        <p>
+          When you choose to send a bug report, suggestion or support email,
+          SpendFlex opens your email app with information you entered and useful
+          technical context such as plan status, region, language, date,
+          platform version and app version. You decide whether to send it and
+          whether to attach a screenshot. Your email provider then processes
+          that message under its own terms.
+        </p>
+
+        <h2>6. No ads or in-app usage tracking</h2>
+        <p>
+          SpendFlex contains no advertising SDK, no third-party app-usage
+          analytics SDK and no third-party crash-reporting SDK. Apple and Google
+          may independently process store, download or platform diagnostics
+          under your device and store settings; that processing is controlled by
+          those platforms, not by SpendFlex.
+        </p>
+
+        <h2>7. Sharing and sale of data</h2>
+        <p>
+          SpendFlex does not sell your personal or financial data. Information
+          leaves the app only for the limited purposes described above:
+        </p>
         <ul>
-          <li>App screens viewed</li>
-          <li>Buttons or features used</li>
-          <li>General usage events</li>
-          <li>Device and app information</li>
-          <li>Approximate technical information such as operating system version, app version and device type</li>
+          <li>Apple, Google and RevenueCat for purchases and entitlements</li>
+          <li>ExchangeRate-API when you request a currency conversion</li>
+          <li>A destination you choose for an export or backup</li>
+          <li>Your email provider when you choose to send support or feedback</li>
         </ul>
+
+        <h2>8. Data retention</h2>
         <p>
-          We do not use PostHog to intentionally collect sensitive financial
-          details such as your expense descriptions, exact spending history or
-          bank information.
+          Local data remains on your device unless you delete it, reset app data
+          or uninstall the app. Files you exported or backed up remain wherever
+          you saved them until you delete them there.
+        </p>
+        <p>
+          Purchase data and emails may be retained by RevenueCat, Apple, Google
+          or your email provider according to their own policies and legal
+          obligations.
         </p>
 
-        <h2>3. Advertising</h2>
-        <p>SpendFlex may use Google AdMob to display ads.</p>
-        <p>AdMob may collect information such as:</p>
+        <h2>9. Your choices</h2>
+        <p>You can:</p>
         <ul>
-          <li>Device identifiers</li>
-          <li>Advertising identifiers, depending on your device settings and consent</li>
-          <li>IP address</li>
-          <li>Ad interactions</li>
-          <li>App usage information related to ads</li>
-          <li>Crash logs</li>
-          <li>Performance and diagnostic data</li>
+          <li>Delete entries, accounts and other data inside the app</li>
+          <li>Export or back up your data to a location you control</li>
+          <li>Change app settings inside the app</li>
+          <li>Uninstall the app to remove locally stored app data from your device</li>
+          <li>Contact us about data you deliberately sent by email</li>
         </ul>
-        <p>
-          This data may be used to provide, measure and improve advertising.
-          Depending on your consent and device settings, ads may be personalized
-          or non-personalized.
-        </p>
-        <p>
-          You can learn more about how Google uses data here:
-          <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a>
-        </p>
 
-        <h2>4. Crash reporting and diagnostics</h2>
-        <p>
-          SpendFlex may use Sentry to help identify crashes, performance issues
-          and technical errors.
-        </p>
-        <p>
-          Diagnostic data may include device information, app version, operating
-          system version, error details and technical logs related to crashes.
-        </p>
-
-        <h2>5. Purchases</h2>
-        <p>SpendFlex may offer premium features through in-app purchases.</p>
-        <p>
-          Purchases and subscriptions may be processed by Apple, Google and
-          RevenueCat. SpendFlex does not collect or store your payment card
-          details.
-        </p>
-
-        <h2>6. No account required</h2>
-        <p>
-          SpendFlex does not require you to create an account and does not ask
-          you to connect your bank account.
-        </p>
-
-        <h2>7. Children's privacy</h2>
+        <h2>10. Children's privacy</h2>
         <p>SpendFlex is intended for general audiences.</p>
         <p>
           We do not knowingly collect personal information from children. If you
-          believe that a child has provided personal information through the app,
-          please contact us and we will take appropriate steps.
+          believe a child has sent personal information to us, contact us so we
+          can take appropriate steps.
         </p>
 
-        <h2>8. Data sharing</h2>
+        <h2>11. Changes to this policy</h2>
         <p>
-          SpendFlex may share limited data with third-party service providers
-          used to operate, analyze and monetize the app, including:
-        </p>
-        <ul>
-          <li>Google AdMob, for advertising</li>
-          <li>PostHog, for analytics</li>
-          <li>Sentry, for crash reporting and diagnostics</li>
-          <li>RevenueCat, Apple and Google, for purchases and app distribution</li>
-        </ul>
-        <p>We do not sell personal information.</p>
-
-        <h2>9. Data retention</h2>
-        <p>
-          Local data remains on your device unless you delete it, reset app data
-          or uninstall the app.
-        </p>
-        <p>
-          Analytics, advertising, diagnostic and purchase data may be retained
-          by PostHog, Google AdMob, Sentry, RevenueCat, Apple or Google
-          according to their own retention policies.
+          We may update this policy when SpendFlex's features or service
+          providers change. The date at the top shows the latest revision.
         </p>
 
-        <h2>10. Your choices</h2>
-        <p>You can:</p>
-        <ul>
-          <li>Delete expenses and categories inside the app, if available</li>
-          <li>Change app settings inside the app</li>
-          <li>Disable personalized tracking through iOS or Android privacy settings</li>
-          <li>Reset or limit advertising identifiers through your device settings</li>
-          <li>Uninstall the app to remove locally stored app data from your device</li>
-        </ul>
-
-        <h2>11. Contact</h2>
+        <h2>12. Contact</h2>
         <p>
           If you have any questions about this Privacy Policy, you can contact
           us at:
