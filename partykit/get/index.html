@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get PartyKit</title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="https://caloto.dev/partykit/" />
+    <meta name="theme-color" content="#0F0D17" />
+    <meta name="description" content="Download PartyKit for iOS and Android. Pass the phone. Start the party." />
+    <link rel="icon" href="/assets/partykit/icon-192.png" />
+    <link rel="apple-touch-icon" href="/assets/partykit/icon-192.png" />
+    <script>
+      // Match the SpendFlex download flow, including iPads using desktop mode.
+      (function () {
+        var IOS = "https://apps.apple.com/app/id6769780008";
+        var ANDROID = "https://play.google.com/store/apps/details?id=dev.caloto.partykit";
+        var ua = navigator.userAgent || "";
+        var isIOS =
+          /iPhone|iPad|iPod/i.test(ua) ||
+          (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+        var isAndroid = /Android/i.test(ua);
+        if (isIOS) location.replace(IOS);
+        else if (isAndroid) location.replace(ANDROID);
+      })();
+    </script>
+    <style>
+      :root {
+        color-scheme: dark;
+        --night: #0f0d17;
+        --surface: #1c1a2e;
+        --violet: #a78bfa;
+        --violet-soft: #c4b5fd;
+        --amber: #fcd34d;
+        --text: #f3f4f6;
+        --muted: #9ca3af;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; min-height: 100%; }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        min-height: 100svh;
+        padding: 32px 20px;
+        background: var(--night);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        text-align: center;
+        line-height: 1.5;
+      }
+      main { width: 100%; max-width: 420px; min-width: 0; }
+      .logo { display: block; width: 84px; height: 84px; margin: 0 auto; border-radius: 20px; }
+      h1 { font-size: 2.5rem; font-weight: 800; margin: 22px 0 6px; }
+      h1 span { color: var(--violet); }
+      .tag { font-size: 0.9375rem; color: var(--muted); margin: 0 0 32px; }
+      .stores { display: flex; flex-direction: column; gap: 14px; align-items: center; }
+      .badge {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        width: 100%;
+        max-width: 270px;
+        min-height: 76px;
+        padding: 13px 22px;
+        border: 1px solid var(--violet);
+        border-radius: 8px;
+        background: var(--surface);
+        color: var(--text);
+        text-decoration: none;
+        text-align: left;
+      }
+      .badge:hover { border-color: var(--amber); background: #251f3a; }
+      .badge svg { width: 30px; height: 30px; flex: none; color: var(--violet-soft); }
+      .badge small { display: block; font-size: 0.75rem; color: var(--muted); }
+      .badge strong { font-size: 1.125rem; font-weight: 700; }
+      a:focus-visible { outline: 3px solid var(--amber); outline-offset: 5px; }
+      .more { margin: 28px 0 0; font-size: 0.9375rem; }
+      a { color: var(--violet-soft); text-underline-offset: 4px; }
+      footer {
+        margin-top: 36px;
+        padding-top: 18px;
+        border-top: 1px solid rgba(167, 139, 250, 0.3);
+        font-size: 0.8125rem;
+        color: var(--muted);
+        overflow-wrap: anywhere;
+      }
+      footer p { margin: 0; }
+      footer .contact { margin-top: 8px; }
+      footer .links { display: flex; gap: 0 18px; justify-content: center; flex-wrap: wrap; margin-top: 12px; }
+      footer .links a { display: inline-flex; align-items: center; min-height: 44px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img class="logo" src="/assets/partykit/icon-192.png" alt="PartyKit logo" width="84" height="84" />
+      <h1>Party<span>Kit</span></h1>
+      <p class="tag">Pass the phone. Start the party.</p>
+
+      <nav class="stores" aria-label="Download PartyKit">
+        <a class="badge" href="https://apps.apple.com/app/id6769780008" aria-label="Download PartyKit on the App Store">
+          <svg viewBox="0 0 384 512" aria-hidden="true" fill="currentColor">
+            <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
+          </svg>
+          <span><small>Download on the</small><strong>App Store</strong></span>
+        </a>
+        <a class="badge" href="https://play.google.com/store/apps/details?id=dev.caloto.partykit" aria-label="Get PartyKit on Google Play">
+          <svg viewBox="0 0 512 512" aria-hidden="true" fill="currentColor">
+            <path d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" />
+          </svg>
+          <span><small>Get it on</small><strong>Google Play</strong></span>
+        </a>
+      </nav>
+
+      <p class="more"><a href="/partykit/">Learn more about PartyKit &rarr;</a></p>
+
+      <footer>
+        <p>PartyKit is a party games app developed and operated by Alfredo Caloto (caloto.dev), Spain.</p>
+        <p class="contact"><a href="mailto:contact@caloto.dev">contact@caloto.dev</a></p>
+        <nav class="links" aria-label="Legal and support">
+          <a href="/partykit/terms/">Terms of Use</a>
+          <a href="/partykit/privacy/">Privacy Policy</a>
+          <a href="/partykit/support/">Support</a>
+        </nav>
+      </footer>
+    </main>
+  </body>
+</html>
